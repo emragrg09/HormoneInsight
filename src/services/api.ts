@@ -335,9 +335,12 @@ function adaptModelInfo(be: BackendModelInfo): ModelInfo {
 }
 
 function adaptContribution(c: BackendContribution): Contribution {
+  const code = c.raw_feature ?? c.feature;
+  const friendly = getFeatureLabel(code, c.label || c.feature);
   return {
     feature_name: c.feature,
-    label: c.label || getFeatureLabel(c.raw_feature ?? c.feature, c.feature),
+    label: friendly,
+    code,
     original_value:
       c.raw_feature && FEATURE_META[c.raw_feature]?.categoricalLabels && c.original_value != null
         ? getCategoricalLabel(c.raw_feature, c.original_value)
