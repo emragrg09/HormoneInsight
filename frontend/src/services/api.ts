@@ -30,6 +30,8 @@ const BASE_URL = (
   .toString()
   .replace(/\/+$/, "");
 
+console.log("[HormoneInsight API] Base URL initialized as:", BASE_URL);
+
 // ---------- Backend response types (mirroring the handoff) ----------
 
 type LikelihoodBandName = "lower" | "moderate" | "higher";
