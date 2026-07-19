@@ -175,6 +175,8 @@ export function AssessmentForm({ schema }: AssessmentFormProps) {
         <FormSection
           title={currentSection.title}
           description={currentSection.description}
+          stepNumber={step + 1}
+          totalSteps={schema.sections.length}
         >
           {currentSection.fields.map((f) => (
             <HealthField
