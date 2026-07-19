@@ -11,6 +11,7 @@ export interface FeatureFieldOption {
 export interface FeatureField {
   name: string;
   label: string;
+  code?: string;
   type: FieldType;
   required: boolean;
   unit?: string;
