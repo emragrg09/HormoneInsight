@@ -29,7 +29,14 @@ export function ContributionList({
             return (
               <li key={c.feature_name}>
                 <div className="flex items-baseline justify-between gap-3 text-sm">
-                  <span className="font-medium">{c.label}</span>
+                  <span className="font-medium">
+                    {c.label}
+                    {c.code && c.code !== c.label && (
+                      <span className="ml-2 text-[10px] font-mono uppercase tracking-wide text-muted-foreground/70">
+                        {c.code}
+                      </span>
+                    )}
+                  </span>
                   <span className="text-muted-foreground">
                     {c.original_value == null || c.original_value === ""
                       ? "—"
