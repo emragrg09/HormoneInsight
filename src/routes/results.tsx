@@ -60,7 +60,8 @@ function ResultsPage() {
       </div>
 
       <ExplanationCard
-        explanation={result.explanation}
+        probability={result.probability}
+        band={result.likelihood_band}
         disclaimer={result.disclaimer}
       />
 
