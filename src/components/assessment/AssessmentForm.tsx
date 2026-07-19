@@ -196,7 +196,11 @@ export function AssessmentForm({ schema }: AssessmentFormProps) {
               You can go back to any step to make edits.
             </p>
           </div>
-          <ReviewAnswers schema={schema} values={form.getValues()} />
+          <ReviewAnswers
+            schema={schema}
+            values={form.getValues()}
+            onEditSection={(idx) => setStep(idx)}
+          />
         </div>
       )}
 
