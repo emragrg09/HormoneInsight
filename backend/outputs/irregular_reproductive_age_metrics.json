@@ -1,0 +1,24 @@
+{
+  "n_test": 185,
+  "accuracy": 0.7946,
+  "precision": 0.0333,
+  "recall": 0.1,
+  "f1": 0.05,
+  "roc_auc": 0.5389,
+  "threshold": 0.69,
+  "confusion_matrix": {
+    "true_negative": 146,
+    "false_positive": 29,
+    "false_negative": 9,
+    "true_positive": 1
+  },
+  "task": "irregular_reproductive_age",
+  "task_label": "Non-menopause no-period signal, ages 20-45",
+  "n_raw_merged_rows": 3917,
+  "n_benchmark_rows": 921,
+  "n_train": 736,
+  "n_positive": 65,
+  "n_negative": 856,
+  "positive_definition": "Age 20-45 and RHD043 == 9, other reason for no regular periods",
+  "negative_definition": "Age 20-45 and RHQ031 == 1, had regular periods in past 12 months"
+}

@@ -1,0 +1,6 @@
+{
+  "status_code": 422,
+  "body": {
+    "detail": "RIDAGEYR must be numeric or null"
+  }
+}

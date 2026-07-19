@@ -1,0 +1,936 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/ju92ig",
+    "id": "ju92ig",
+    "slide": 1,
+    "layoutId": "2da1456f-03e4-4ea9-822e-90faab99296c",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "456d17f2-df1d-4f96-92ba-4377316516b0",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F8FAFC",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "2da1456f-03e4-4ea9-822e-90faab99296c",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "456d17f2-df1d-4f96-92ba-4377316516b0",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "456d17f2-df1d-4f96-92ba-4377316516b0",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/czed8v6p",
+      "id": "1",
+      "bbox": [
+        72,
+        52,
+        420,
+        28
+      ],
+      "geometry": "rect",
+      "text": "TECH ARCHITECTURE",
+      "textPreview": "TECH ARCHITECTURE",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#007A55",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "TECH ARCHITECTURE"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "TECH ARCHITECTURE",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#007A55",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "TECH ARCHITECTURE",
+              "fontSize": 15,
+              "color": "#007A55",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/neloj2t8",
+      "id": "2",
+      "bbox": [
+        72,
+        98,
+        1080,
+        54
+      ],
+      "geometry": "rect",
+      "text": "Backend architecture for the model estimate",
+      "textPreview": "Backend architecture for the model estimate",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "fontSize": 40,
+        "typeface": "+mn-lt",
+        "color": "#020618",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Backend architecture for the model estimate"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Backend architecture for the model estimate",
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "color": "#020618",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Backend architecture for the model estimate",
+              "fontSize": 40,
+              "color": "#020618",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ytsvu9kn",
+      "id": "3",
+      "bbox": [
+        72,
+        172,
+        1030,
+        42
+      ],
+      "geometry": "rect",
+      "text": "A saved NumPy logistic-regression model is trained on linked NHANES 2021-2023 modules.",
+      "textPreview": "A saved NumPy logistic-regression model is trained on linked NHANES 2021-2023 modules.",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#45556C",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A saved NumPy logistic-regression model is trained on linked NHANES 2021-2023 modules."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A saved NumPy logistic-regression model is trained on linked NHANES 2021-2023 modules.",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#45556C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A saved NumPy logistic-regression model is trained on linked NHANES 2021-2023 modules.",
+              "fontSize": 20,
+              "color": "#45556C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5sneloj2",
+      "id": "4",
+      "bbox": [
+        105,
+        265,
+        310,
+        184
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#E2E8F0",
+      "lineWidth": 1
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cbulwval",
+      "id": "5",
+      "bbox": [
+        105,
+        265,
+        7,
+        184
+      ],
+      "geometry": "rect",
+      "fillColor": "#009966",
+      "lineColor": "#009966",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nqxs72x4",
+      "id": "6",
+      "bbox": [
+        127,
+        283,
+        266,
+        32
+      ],
+      "geometry": "rect",
+      "text": "1. Data",
+      "textPreview": "1. Data",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "fontSize": 21,
+        "typeface": "+mn-lt",
+        "color": "#020618",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1. Data"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1. Data",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#020618",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1. Data",
+              "fontSize": 21,
+              "color": "#020618",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u54zidon",
+      "id": "7",
+      "bbox": [
+        127,
+        323,
+        266,
+        118
+      ],
+      "geometry": "rect",
+      "text": "NHANES modules merged by SEQN: demographics, reproductive health, body measures, hormones, labs, lipids, and pregnancy test.",
+      "textPreview": "NHANES modules merged by SEQN: demographics, reproductive health, body measures, hormones, labs, lipids, and pregnancy test.",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#45556C",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "NHANES modules merged by SEQN:"
+          },
+          {
+            "index": 2,
+            "text": "demographics, reproductive health,"
+          },
+          {
+            "index": 3,
+            "text": "body measures, hormones, labs,"
+          },
+          {
+            "index": 4,
+            "text": "lipids, and pregnancy test."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "NHANES modules merged by SEQN: demographics, reproductive health, body measures, hormones, labs, lipids, and pregnancy test.",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#45556C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "NHANES modules merged by SEQN: demographics, reproductive health, body measures, hormones, labs, lipids, and pregnancy test.",
+              "fontSize": 16,
+              "color": "#45556C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5wjudg7a",
+      "id": "8",
+      "bbox": [
+        441,
+        343,
+        30,
+        28
+      ],
+      "geometry": "rightArrow",
+      "fillColor": "#CAD5E2",
+      "lineColor": "#CAD5E2",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gbq1oryt",
+      "id": "9",
+      "bbox": [
+        497,
+        265,
+        310,
+        184
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#E2E8F0",
+      "lineWidth": 1
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qxs72x4n",
+      "id": "10",
+      "bbox": [
+        497,
+        265,
+        7,
+        184
+      ],
+      "geometry": "rect",
+      "fillColor": "#0084D1",
+      "lineColor": "#0084D1",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fil0rqd4",
+      "id": "11",
+      "bbox": [
+        519,
+        283,
+        266,
+        32
+      ],
+      "geometry": "rect",
+      "text": "2. Model",
+      "textPreview": "2. Model",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "fontSize": 21,
+        "typeface": "+mn-lt",
+        "color": "#020618",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2. Model"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2. Model",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#020618",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2. Model",
+              "fontSize": 21,
+              "color": "#020618",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/83itgfml",
+      "id": "12",
+      "bbox": [
+        519,
+        323,
+        266,
+        118
+      ],
+      "geometry": "rect",
+      "text": "Class-balanced logistic regression in NumPy. Target: self-reported menopause/change of life as reason for no regular periods.",
+      "textPreview": "Class-balanced logistic regression in NumPy. Target: self-reported menopause/change of life as reason for no regular periods.",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#45556C",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Class-balanced logistic regression in"
+          },
+          {
+            "index": 2,
+            "text": "NumPy. Target: self-reported"
+          },
+          {
+            "index": 3,
+            "text": "menopause/change of life as reason"
+          },
+          {
+            "index": 4,
+            "text": "for no regular periods."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Class-balanced logistic regression in NumPy. Target: self-reported menopause/change of life as reason for no regular periods.",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#45556C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Class-balanced logistic regression in NumPy. Target: self-reported menopause/change of life as reason for no regular periods.",
+              "fontSize": 16,
+              "color": "#45556C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xobm58z2",
+      "id": "13",
+      "bbox": [
+        833,
+        343,
+        30,
+        28
+      ],
+      "geometry": "rightArrow",
+      "fillColor": "#CAD5E2",
+      "lineColor": "#CAD5E2",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m94fu18j",
+      "id": "14",
+      "bbox": [
+        889,
+        265,
+        310,
+        184
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#E2E8F0",
+      "lineWidth": 1
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fu18jqh0",
+      "id": "15",
+      "bbox": [
+        889,
+        265,
+        7,
+        184
+      ],
+      "geometry": "rect",
+      "fillColor": "#7F22FE",
+      "lineColor": "#7F22FE",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4fu18jqh",
+      "id": "16",
+      "bbox": [
+        911,
+        283,
+        266,
+        32
+      ],
+      "geometry": "rect",
+      "text": "3. Artifacts",
+      "textPreview": "3. Artifacts",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "fontSize": 21,
+        "typeface": "+mn-lt",
+        "color": "#020618",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "3. Artifacts"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "3. Artifacts",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#020618",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "3. Artifacts",
+              "fontSize": 21,
+              "color": "#020618",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x0nuxc3y",
+      "id": "17",
+      "bbox": [
+        911,
+        323,
+        266,
+        118
+      ],
+      "geometry": "rect",
+      "text": "Saved weights, bias, feature order, imputation, category mappings, scaling parameters, threshold, metrics, and metadata.",
+      "textPreview": "Saved weights, bias, feature order, imputation, category mappings, scaling parameters, threshold, metrics, and metadata.",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#45556C",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Saved weights, bias, feature order,"
+          },
+          {
+            "index": 2,
+            "text": "imputation, category mappings,"
+          },
+          {
+            "index": 3,
+            "text": "scaling parameters, threshold,"
+          },
+          {
+            "index": 4,
+            "text": "metrics, and metadata."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Saved weights, bias, feature order, imputation, category mappings, scaling parameters, threshold, metrics, and metadata.",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#45556C",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Saved weights, bias, feature order, imputation, category mappings, scaling parameters, threshold, metrics, and metadata.",
+              "fontSize": 16,
+              "color": "#45556C",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mlkjm1cf",
+      "id": "18",
+      "bbox": [
+        154,
+        525,
+        972,
+        74
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#ECFDF5",
+      "lineColor": "#A4F4CF",
+      "lineWidth": 1
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/f6dcbulw",
+      "id": "19",
+      "bbox": [
+        188,
+        543,
+        904,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Careful wording: this is a model estimate based on self-reported NHANES data, not clinically confirmed menopause, not a diagnosis, and not treatment advice.",
+      "textPreview": "Careful wording: this is a model estimate based on self-reported NHANES data, not clinically confirmed menopause, not a diagnosis, and no...",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "+mn-lt",
+        "color": "#004F3B",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Careful wording: this is a model estimate based on self-reported NHANES data, not clinically confirmed"
+          },
+          {
+            "index": 2,
+            "text": "menopause, not a diagnosis, and not treatment advice."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Careful wording: this is a model estimate based on self-reported NHANES data, not clinically confirmed menopause, not a diagnosis, and not treatment advice.",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "color": "#004F3B",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Careful wording: this is a model estimate based on self-reported NHANES data, not clinically confirmed menopause, not a diagnosis, and not treatment advice.",
+              "fontSize": 19,
+              "color": "#004F3B",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/36hcrmhk",
+      "id": "20",
+      "bbox": [
+        72,
+        664,
+        620,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Research prototype. Not a clinical diagnosis.",
+      "textPreview": "Research prototype. Not a clinical diagnosis.",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#62748E",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Research prototype. Not a clinical diagnosis."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Research prototype. Not a clinical diagnosis.",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#62748E",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Research prototype. Not a clinical diagnosis.",
+              "fontSize": 14,
+              "color": "#62748E",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

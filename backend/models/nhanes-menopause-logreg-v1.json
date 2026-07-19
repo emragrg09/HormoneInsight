@@ -1,0 +1,934 @@
+{
+  "model_version": "nhanes-menopause-logreg-v1",
+  "task": "menopause",
+  "task_label": "Menopause/change of life",
+  "model_type": "class-balanced binary logistic regression",
+  "implementation": "NumPy gradient descent",
+  "raw_feature_order": [
+    "RIDAGEYR",
+    "RIDRETH3",
+    "DMDEDUC2",
+    "DMDMARTZ",
+    "INDFMPIR",
+    "RIDEXPRG",
+    "RHQ010",
+    "RHQ078",
+    "RHQ131",
+    "RHD167",
+    "RHQ200",
+    "RHD280",
+    "RHQ305",
+    "BMXWT",
+    "BMXHT",
+    "BMXBMI",
+    "BMXLEG",
+    "BMXARML",
+    "BMXARMC",
+    "BMXWAIST",
+    "BMXHIP",
+    "LBXAND",
+    "LBXAMH",
+    "LBXDHE",
+    "LBXEST",
+    "LBXESO",
+    "LBXPG4",
+    "LBXSHBG",
+    "LBXTST",
+    "LBXIN",
+    "LBXGLU",
+    "LBXGH",
+    "LBXHSCRP",
+    "LBXSAL",
+    "LBXSAPSI",
+    "LBXSASSI",
+    "LBXSATSI",
+    "LBXSBU",
+    "LBXSCA",
+    "LBXSCR",
+    "LBXSGL",
+    "LBXSIR",
+    "LBXSTB",
+    "LBXSTP",
+    "LBXSTR",
+    "LBXSUA",
+    "LBDHDD",
+    "LBXTC",
+    "LBXTLG",
+    "LBDLDL",
+    "URXPREG"
+  ],
+  "transformed_feature_order": [
+    "RIDAGEYR",
+    "INDFMPIR",
+    "RHQ010",
+    "RHD167",
+    "BMXWT",
+    "BMXHT",
+    "BMXBMI",
+    "BMXLEG",
+    "BMXARML",
+    "BMXARMC",
+    "BMXWAIST",
+    "BMXHIP",
+    "LBXAND",
+    "LBXAMH",
+    "LBXDHE",
+    "LBXEST",
+    "LBXESO",
+    "LBXPG4",
+    "LBXSHBG",
+    "LBXTST",
+    "LBXIN",
+    "LBXGLU",
+    "LBXGH",
+    "LBXHSCRP",
+    "LBXSAL",
+    "LBXSAPSI",
+    "LBXSASSI",
+    "LBXSATSI",
+    "LBXSBU",
+    "LBXSCA",
+    "LBXSCR",
+    "LBXSGL",
+    "LBXSIR",
+    "LBXSTB",
+    "LBXSTP",
+    "LBXSTR",
+    "LBXSUA",
+    "LBDHDD",
+    "LBXTC",
+    "LBXTLG",
+    "LBDLDL",
+    "RIDRETH3_1",
+    "RIDRETH3_2",
+    "RIDRETH3_3",
+    "RIDRETH3_4",
+    "RIDRETH3_6",
+    "RIDRETH3_7",
+    "RIDRETH3_missing",
+    "DMDEDUC2_1",
+    "DMDEDUC2_2",
+    "DMDEDUC2_3",
+    "DMDEDUC2_4",
+    "DMDEDUC2_5",
+    "DMDEDUC2_missing",
+    "DMDMARTZ_1",
+    "DMDMARTZ_2",
+    "DMDMARTZ_3",
+    "DMDMARTZ_missing",
+    "RIDEXPRG_1",
+    "RIDEXPRG_2",
+    "RIDEXPRG_missing",
+    "RHQ078_1",
+    "RHQ078_2",
+    "RHQ078_missing",
+    "RHQ131_1",
+    "RHQ131_2",
+    "RHQ131_missing",
+    "RHQ200_1",
+    "RHQ200_2",
+    "RHQ200_missing",
+    "RHD280_1",
+    "RHD280_2",
+    "RHD280_missing",
+    "RHQ305_1",
+    "RHQ305_2",
+    "RHQ305_missing",
+    "URXPREG_1",
+    "URXPREG_2",
+    "URXPREG_missing"
+  ],
+  "numeric_features": [
+    "RIDAGEYR",
+    "INDFMPIR",
+    "RHQ010",
+    "RHD167",
+    "BMXWT",
+    "BMXHT",
+    "BMXBMI",
+    "BMXLEG",
+    "BMXARML",
+    "BMXARMC",
+    "BMXWAIST",
+    "BMXHIP",
+    "LBXAND",
+    "LBXAMH",
+    "LBXDHE",
+    "LBXEST",
+    "LBXESO",
+    "LBXPG4",
+    "LBXSHBG",
+    "LBXTST",
+    "LBXIN",
+    "LBXGLU",
+    "LBXGH",
+    "LBXHSCRP",
+    "LBXSAL",
+    "LBXSAPSI",
+    "LBXSASSI",
+    "LBXSATSI",
+    "LBXSBU",
+    "LBXSCA",
+    "LBXSCR",
+    "LBXSGL",
+    "LBXSIR",
+    "LBXSTB",
+    "LBXSTP",
+    "LBXSTR",
+    "LBXSUA",
+    "LBDHDD",
+    "LBXTC",
+    "LBXTLG",
+    "LBDLDL"
+  ],
+  "categorical_features": [
+    "RIDRETH3",
+    "DMDEDUC2",
+    "DMDMARTZ",
+    "RIDEXPRG",
+    "RHQ078",
+    "RHQ131",
+    "RHQ200",
+    "RHD280",
+    "RHQ305",
+    "URXPREG"
+  ],
+  "preprocessing": {
+    "missing_code_replacements": {
+      "DMDEDUC2": [
+        7,
+        9
+      ],
+      "DMDMARTZ": [
+        77,
+        99
+      ],
+      "RIDEXPRG": [
+        3
+      ],
+      "RHQ010": [
+        777,
+        999
+      ],
+      "RHQ078": [
+        7,
+        9
+      ],
+      "RHQ131": [
+        7,
+        9
+      ],
+      "RHD167": [
+        77,
+        99
+      ],
+      "RHQ200": [
+        7,
+        9
+      ],
+      "RHD280": [
+        7,
+        9
+      ],
+      "RHQ305": [
+        7,
+        9
+      ],
+      "URXPREG": [
+        3
+      ]
+    },
+    "numeric_imputation": {
+      "RIDAGEYR": 44.0,
+      "INDFMPIR": 2.825,
+      "RHQ010": 12.0,
+      "RHD167": 2.0,
+      "BMXWT": 70.6,
+      "BMXHT": 160.9,
+      "BMXBMI": 27.4,
+      "BMXLEG": 37.0,
+      "BMXARML": 36.0,
+      "BMXARMC": 31.4,
+      "BMXWAIST": 92.2,
+      "BMXHIP": 104.7,
+      "LBXAND": 70.6,
+      "LBXAMH": 0.15,
+      "LBXDHE": 72.55,
+      "LBXEST": 21.5,
+      "LBXESO": 3.705,
+      "LBXPG4": 5.4,
+      "LBXSHBG": 52.72,
+      "LBXTST": 23.3,
+      "LBXIN": 9.19,
+      "LBXGLU": 98.0,
+      "LBXGH": 5.4,
+      "LBXHSCRP": 1.73,
+      "LBXSAL": 4.1,
+      "LBXSAPSI": 80.0,
+      "LBXSASSI": 18.0,
+      "LBXSATSI": 15.0,
+      "LBXSBU": 13.0,
+      "LBXSCA": 9.4,
+      "LBXSCR": 0.73,
+      "LBXSGL": 92.0,
+      "LBXSIR": 78.0,
+      "LBXSTB": 0.4,
+      "LBXSTP": 7.1,
+      "LBXSTR": 97.0,
+      "LBXSUA": 4.4,
+      "LBDHDD": 57.0,
+      "LBXTC": 183.0,
+      "LBXTLG": 92.0,
+      "LBDLDL": 103.0
+    },
+    "category_mappings": {
+      "RIDRETH3": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6",
+        "7",
+        "missing"
+      ],
+      "DMDEDUC2": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "missing"
+      ],
+      "DMDMARTZ": [
+        "1",
+        "2",
+        "3",
+        "missing"
+      ],
+      "RIDEXPRG": [
+        "1",
+        "2",
+        "missing"
+      ],
+      "RHQ078": [
+        "1",
+        "2",
+        "missing"
+      ],
+      "RHQ131": [
+        "1",
+        "2",
+        "missing"
+      ],
+      "RHQ200": [
+        "1",
+        "2",
+        "missing"
+      ],
+      "RHD280": [
+        "1",
+        "2",
+        "missing"
+      ],
+      "RHQ305": [
+        "1",
+        "2",
+        "missing"
+      ],
+      "URXPREG": [
+        "1",
+        "2",
+        "missing"
+      ]
+    },
+    "scaling_means": {
+      "RIDAGEYR": 45.044655581947744,
+      "INDFMPIR": 2.8901258907363423,
+      "RHQ010": 12.271733966745844,
+      "RHD167": 2.0042755344418053,
+      "BMXWT": 74.9759952494062,
+      "BMXHT": 160.91078384798098,
+      "BMXBMI": 28.92327790973872,
+      "BMXLEG": 36.967648456057006,
+      "BMXARML": 35.93586698337292,
+      "BMXARMC": 32.070831353919246,
+      "BMXWAIST": 94.65909738717339,
+      "BMXHIP": 107.32180522565321,
+      "LBXAND": 83.52270308788597,
+      "LBXAMH": 1.2466698337292161,
+      "LBXDHE": 89.52109643705462,
+      "LBXEST": 119.73645605700713,
+      "LBXESO": 7.180087980997626,
+      "LBXPG4": 194.34751543942994,
+      "LBXSHBG": 65.08748218527316,
+      "LBXTST": 27.086167695961997,
+      "LBXIN": 11.299933491686462,
+      "LBXGLU": 99.98147268408552,
+      "LBXGH": 5.547030878859857,
+      "LBXHSCRP": 3.487691211401425,
+      "LBXSAL": 4.0442280285035626,
+      "LBXSAPSI": 85.93681710213777,
+      "LBXSASSI": 20.463182897862232,
+      "LBXSATSI": 17.414726840855106,
+      "LBXSBU": 13.482185273159145,
+      "LBXSCA": 9.405748218527314,
+      "LBXSCR": 0.7526318289786224,
+      "LBXSGL": 96.07078384798099,
+      "LBXSIR": 81.97054631828979,
+      "LBXSTB": 0.43016152019002374,
+      "LBXSTP": 7.134251781472685,
+      "LBXSTR": 111.96294536817102,
+      "LBXSUA": 4.503562945368171,
+      "LBDHDD": 58.55486935866983,
+      "LBXTC": 186.4023752969121,
+      "LBXTLG": 98.8627078384798,
+      "LBDLDL": 105.16389548693587,
+      "RIDRETH3_1": 0.0855106888361045,
+      "RIDRETH3_2": 0.10498812351543943,
+      "RIDRETH3_3": 0.578147268408551,
+      "RIDRETH3_4": 0.11923990498812352,
+      "RIDRETH3_6": 0.05368171021377672,
+      "RIDRETH3_7": 0.05843230403800475,
+      "RIDRETH3_missing": 0.0,
+      "DMDEDUC2_1": 0.020902612826603325,
+      "DMDEDUC2_2": 0.05320665083135392,
+      "DMDEDUC2_3": 0.14204275534441804,
+      "DMDEDUC2_4": 0.25985748218527316,
+      "DMDEDUC2_5": 0.3401425178147268,
+      "DMDEDUC2_missing": 0.1838479809976247,
+      "DMDMARTZ_1": 0.4213776722090261,
+      "DMDMARTZ_2": 0.2171021377672209,
+      "DMDMARTZ_3": 0.17814726840855108,
+      "DMDMARTZ_missing": 0.1833729216152019,
+      "RIDEXPRG_1": 0.013776722090261283,
+      "RIDEXPRG_2": 0.3026128266033254,
+      "RIDEXPRG_missing": 0.6836104513064133,
+      "RHQ078_1": 0.020427553444180523,
+      "RHQ078_2": 0.503562945368171,
+      "RHQ078_missing": 0.47600950118764845,
+      "RHQ131_1": 0.33539192399049883,
+      "RHQ131_2": 0.14394299287410928,
+      "RHQ131_missing": 0.520665083135392,
+      "RHQ200_1": 0.007125890736342043,
+      "RHQ200_2": 0.17054631828978623,
+      "RHQ200_missing": 0.8223277909738718,
+      "RHD280_1": 0.047980997624703085,
+      "RHD280_2": 0.7676959619952494,
+      "RHD280_missing": 0.18432304038004751,
+      "RHQ305_1": 0.033729216152019,
+      "RHQ305_2": 0.7814726840855107,
+      "RHQ305_missing": 0.1847980997624703,
+      "URXPREG_1": 0.013776722090261283,
+      "URXPREG_2": 0.30736342042755344,
+      "URXPREG_missing": 0.6788598574821852
+    },
+    "scaling_stds": {
+      "RIDAGEYR": 21.18477242922361,
+      "INDFMPIR": 1.5680632506992247,
+      "RHQ010": 1.6692488479148078,
+      "RHD167": 0.7207415647318673,
+      "BMXWT": 21.201735884926922,
+      "BMXHT": 6.822157105322404,
+      "BMXBMI": 7.799460087290836,
+      "BMXLEG": 2.7849444891984927,
+      "BMXARML": 2.264749086182133,
+      "BMXARMC": 5.666261175224856,
+      "BMXWAIST": 17.448331768518575,
+      "BMXHIP": 15.010679169679456,
+      "LBXAND": 53.0078412895171,
+      "LBXAMH": 2.048966116402748,
+      "LBXDHE": 68.26593674121538,
+      "LBXEST": 758.2415488931299,
+      "LBXESO": 27.18807959831983,
+      "LBXPG4": 762.8470988198027,
+      "LBXSHBG": 51.134926431619135,
+      "LBXTST": 18.926091272184607,
+      "LBXIN": 10.60593615149398,
+      "LBXGLU": 15.916373027159059,
+      "LBXGH": 0.7811417812478486,
+      "LBXHSCRP": 6.16739355328539,
+      "LBXSAL": 0.31805041998288885,
+      "LBXSAPSI": 31.834563717580313,
+      "LBXSASSI": 13.205335738087118,
+      "LBXSATSI": 12.342524089010364,
+      "LBXSBU": 4.8577474256293804,
+      "LBXSCA": 0.3609243299324341,
+      "LBXSCR": 0.20382443666703054,
+      "LBXSGL": 23.158062155086,
+      "LBXSIR": 33.669652803392765,
+      "LBXSTB": 0.24521654227652126,
+      "LBXSTP": 0.4075805260867616,
+      "LBXSTR": 62.5605528331421,
+      "LBXSUA": 1.1023573250132337,
+      "LBDHDD": 13.883715749669486,
+      "LBXTC": 38.966021735206574,
+      "LBXTLG": 43.67686893020441,
+      "LBDLDL": 25.094616165292674,
+      "RIDRETH3_1": 0.27970659193350395,
+      "RIDRETH3_2": 0.3066109552848808,
+      "RIDRETH3_3": 0.4939725935399939,
+      "RIDRETH3_4": 0.3241475980583338,
+      "RIDRETH3_6": 0.2254420738936821,
+      "RIDRETH3_7": 0.23461483138975767,
+      "RIDRETH3_missing": 1.0,
+      "DMDEDUC2_1": 0.1430923500551674,
+      "DMDEDUC2_2": 0.22449865470276206,
+      "DMDEDUC2_3": 0.3491769356524626,
+      "DMDEDUC2_4": 0.43866044212044036,
+      "DMDEDUC2_5": 0.47386945570255956,
+      "DMDEDUC2_missing": 0.3874522117925841,
+      "DMDMARTZ_1": 0.4938971683501279,
+      "DMDMARTZ_2": 0.4123706866329092,
+      "DMDMARTZ_3": 0.38272758727110573,
+      "DMDMARTZ_missing": 0.3870639041571735,
+      "RIDEXPRG_1": 0.11659065864045876,
+      "RIDEXPRG_2": 0.4594982123521174,
+      "RIDEXPRG_missing": 0.4651773858120646,
+      "RHQ078_1": 0.14149126859405714,
+      "RHQ078_2": 0.5001061094203245,
+      "RHQ078_missing": 0.49954279467525686,
+      "RHQ131_1": 0.47223947776991804,
+      "RHQ131_2": 0.35111532853886457,
+      "RHQ131_missing": 0.49969147747716586,
+      "RHQ200_1": 0.0841336740762681,
+      "RHQ200_2": 0.37620141623468195,
+      "RHQ200_missing": 0.3823273945304906,
+      "RHD280_1": 0.21377682745828588,
+      "RHD280_2": 0.4224022179779578,
+      "RHD280_missing": 0.3878395484825877,
+      "RHQ305_1": 0.18057421303475485,
+      "RHQ305_2": 0.41334524800596606,
+      "RHQ305_missing": 0.388225917133349,
+      "URXPREG_1": 0.11659065864045876,
+      "URXPREG_2": 0.46151092318214093,
+      "URXPREG_missing": 0.4670254467352594
+    },
+    "notes": "Imputation values, category mappings, and scaling parameters are fitted on the training split only."
+  },
+  "classification_threshold": 0.52,
+  "positive_class_label": "Reports menopause/change of life as reason for not having regular periods",
+  "target_definition": {
+    "positive": "RHD043 == 7, menopause/change of life",
+    "negative": "RHQ031 == 1, had regular periods in past 12 months"
+  },
+  "feature_metadata": {
+    "RIDAGEYR": {
+      "label": "RIDAGEYR",
+      "description": "",
+      "type": "numeric",
+      "source": "NHANES survey/exam",
+      "missing_codes": []
+    },
+    "RIDRETH3": {
+      "label": "RIDRETH3",
+      "description": "",
+      "type": "categorical",
+      "source": "NHANES survey/exam",
+      "missing_codes": []
+    },
+    "DMDEDUC2": {
+      "label": "DMDEDUC2",
+      "description": "",
+      "type": "categorical",
+      "source": "NHANES survey/exam",
+      "missing_codes": [
+        7,
+        9
+      ]
+    },
+    "DMDMARTZ": {
+      "label": "DMDMARTZ",
+      "description": "",
+      "type": "categorical",
+      "source": "NHANES survey/exam",
+      "missing_codes": [
+        77,
+        99
+      ]
+    },
+    "INDFMPIR": {
+      "label": "INDFMPIR",
+      "description": "",
+      "type": "numeric",
+      "source": "NHANES survey/exam",
+      "missing_codes": []
+    },
+    "RIDEXPRG": {
+      "label": "RIDEXPRG",
+      "description": "",
+      "type": "categorical",
+      "source": "NHANES survey/exam",
+      "missing_codes": [
+        3
+      ]
+    },
+    "RHQ010": {
+      "label": "RHQ010",
+      "description": "",
+      "type": "numeric",
+      "source": "NHANES survey/exam",
+      "missing_codes": [
+        777,
+        999
+      ]
+    },
+    "RHQ078": {
+      "label": "RHQ078",
+      "description": "",
+      "type": "categorical",
+      "source": "NHANES survey/exam",
+      "missing_codes": [
+        7,
+        9
+      ]
+    },
+    "RHQ131": {
+      "label": "RHQ131",
+      "description": "",
+      "type": "categorical",
+      "source": "NHANES survey/exam",
+      "missing_codes": [
+        7,
+        9
+      ]
+    },
+    "RHD167": {
+      "label": "RHD167",
+      "description": "",
+      "type": "numeric",
+      "source": "NHANES survey/exam",
+      "missing_codes": [
+        77,
+        99
+      ]
+    },
+    "RHQ200": {
+      "label": "RHQ200",
+      "description": "",
+      "type": "categorical",
+      "source": "NHANES survey/exam",
+      "missing_codes": [
+        7,
+        9
+      ]
+    },
+    "RHD280": {
+      "label": "RHD280",
+      "description": "",
+      "type": "categorical",
+      "source": "NHANES survey/exam",
+      "missing_codes": [
+        7,
+        9
+      ]
+    },
+    "RHQ305": {
+      "label": "RHQ305",
+      "description": "",
+      "type": "categorical",
+      "source": "NHANES survey/exam",
+      "missing_codes": [
+        7,
+        9
+      ]
+    },
+    "BMXWT": {
+      "label": "BMXWT",
+      "description": "",
+      "type": "numeric",
+      "source": "NHANES survey/exam",
+      "missing_codes": []
+    },
+    "BMXHT": {
+      "label": "BMXHT",
+      "description": "",
+      "type": "numeric",
+      "source": "NHANES survey/exam",
+      "missing_codes": []
+    },
+    "BMXBMI": {
+      "label": "BMXBMI",
+      "description": "",
+      "type": "numeric",
+      "source": "NHANES survey/exam",
+      "missing_codes": []
+    },
+    "BMXLEG": {
+      "label": "BMXLEG",
+      "description": "",
+      "type": "numeric",
+      "source": "NHANES survey/exam",
+      "missing_codes": []
+    },
+    "BMXARML": {
+      "label": "BMXARML",
+      "description": "",
+      "type": "numeric",
+      "source": "NHANES survey/exam",
+      "missing_codes": []
+    },
+    "BMXARMC": {
+      "label": "BMXARMC",
+      "description": "",
+      "type": "numeric",
+      "source": "NHANES survey/exam",
+      "missing_codes": []
+    },
+    "BMXWAIST": {
+      "label": "BMXWAIST",
+      "description": "",
+      "type": "numeric",
+      "source": "NHANES survey/exam",
+      "missing_codes": []
+    },
+    "BMXHIP": {
+      "label": "BMXHIP",
+      "description": "",
+      "type": "numeric",
+      "source": "NHANES survey/exam",
+      "missing_codes": []
+    },
+    "LBXAND": {
+      "label": "Androstenedione",
+      "description": "Androstenedione",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXAMH": {
+      "label": "Anti-Mullerian hormone",
+      "description": "Anti-Mullerian hormone",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXDHE": {
+      "label": "DHEA",
+      "description": "DHEA",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXEST": {
+      "label": "Estradiol",
+      "description": "Estradiol",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXESO": {
+      "label": "Estrone",
+      "description": "Estrone",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXPG4": {
+      "label": "Progesterone",
+      "description": "Progesterone",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXSHBG": {
+      "label": "Sex hormone binding globulin",
+      "description": "Sex hormone binding globulin",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXTST": {
+      "label": "Total testosterone",
+      "description": "Total testosterone",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXIN": {
+      "label": "Insulin",
+      "description": "Insulin",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXGLU": {
+      "label": "Fasting glucose",
+      "description": "Fasting glucose",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXGH": {
+      "label": "Glycohemoglobin",
+      "description": "Glycohemoglobin",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXHSCRP": {
+      "label": "High-sensitivity C-reactive protein",
+      "description": "High-sensitivity C-reactive protein",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXSAL": {
+      "label": "Albumin",
+      "description": "Albumin",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXSAPSI": {
+      "label": "Alkaline phosphatase",
+      "description": "Alkaline phosphatase",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXSASSI": {
+      "label": "AST",
+      "description": "AST",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXSATSI": {
+      "label": "ALT",
+      "description": "ALT",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXSBU": {
+      "label": "Blood urea nitrogen",
+      "description": "Blood urea nitrogen",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXSCA": {
+      "label": "Calcium",
+      "description": "Calcium",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXSCR": {
+      "label": "Creatinine",
+      "description": "Creatinine",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXSGL": {
+      "label": "Glucose, serum",
+      "description": "Glucose, serum",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXSIR": {
+      "label": "Iron",
+      "description": "Iron",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXSTB": {
+      "label": "Total bilirubin",
+      "description": "Total bilirubin",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXSTP": {
+      "label": "Total protein",
+      "description": "Total protein",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXSTR": {
+      "label": "Triglycerides, biochemistry profile",
+      "description": "Triglycerides, biochemistry profile",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXSUA": {
+      "label": "Uric acid",
+      "description": "Uric acid",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBDHDD": {
+      "label": "HDL cholesterol",
+      "description": "HDL cholesterol",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXTC": {
+      "label": "Total cholesterol",
+      "description": "Total cholesterol",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBXTLG": {
+      "label": "Triglycerides",
+      "description": "Triglycerides",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "LBDLDL": {
+      "label": "LDL cholesterol",
+      "description": "LDL cholesterol",
+      "type": "numeric",
+      "source": "NHANES laboratory",
+      "missing_codes": []
+    },
+    "URXPREG": {
+      "label": "Urine pregnancy test",
+      "description": "Urine pregnancy test",
+      "type": "categorical",
+      "source": "NHANES laboratory",
+      "missing_codes": [
+        3
+      ]
+    }
+  },
+  "evaluation_metrics": {
+    "n_test": 527,
+    "accuracy": 0.9507,
+    "precision": 0.924,
+    "recall": 0.9706,
+    "f1": 0.9467,
+    "roc_auc": 0.9939,
+    "threshold": 0.52,
+    "confusion_matrix": {
+      "true_negative": 270,
+      "false_positive": 19,
+      "false_negative": 7,
+      "true_positive": 231
+    },
+    "task": "menopause",
+    "task_label": "Menopause/change of life",
+    "n_raw_merged_rows": 3917,
+    "n_benchmark_rows": 2632,
+    "n_train": 2105,
+    "n_positive": 1136,
+    "n_negative": 1496,
+    "positive_definition": "RHD043 == 7, menopause/change of life",
+    "negative_definition": "RHQ031 == 1, had regular periods in past 12 months"
+  },
+  "training_metadata": {
+    "train_rows": 2105,
+    "test_rows": 527,
+    "split": "Deterministic shuffled 80/20 split with NumPy random seed 42.",
+    "medical_warning": "Research model based on self-reported NHANES data; not a clinical diagnosis."
+  }
+}

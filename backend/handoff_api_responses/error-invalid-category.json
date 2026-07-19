@@ -1,0 +1,6 @@
+{
+  "status_code": 422,
+  "body": {
+    "detail": "RIDRETH3 has unseen category '999'. Allowed categories: ['1', '2', '3', '4', '6', '7', 'missing']"
+  }
+}

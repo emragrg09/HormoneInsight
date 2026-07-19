@@ -1,0 +1,123 @@
+{
+    "title":  "Menopause-related menstrual-change model estimate",
+    "model_version":  "nhanes-menopause-logreg-v1",
+    "positive_class_probability":  0.028935,
+    "likelihood_band":  {
+                            "band":  "lower",
+                            "min_probability":  0.0,
+                            "max_probability":  0.33,
+                            "label":  "Lower model-estimated likelihood"
+                        },
+    "classification_threshold":  0.52,
+    "predicted_class":  0,
+    "target":  "Whether an NHANES participant self-reported menopause/change of life as the reason for not having regular periods.",
+    "plain_language_explanation":  "The model estimate is 2.9%. This means the submitted features resemble the benchmark positive class to this degree under the saved model. This is not clinically confirmed menopause, not a clinical diagnosis, and not a validated clinical risk score.",
+    "non_diagnostic_explanation":  "This result is a model estimate for the benchmark target: whether an NHANES participant self-reported menopause/change of life as the reason for not having regular periods. It is not clinically confirmed menopause, not a clinical diagnosis, and not a validated clinical risk score.",
+    "main_factors":  {
+                         "top_positive_contributions":  [
+                                                            {
+                                                                "feature":  "RIDAGEYR",
+                                                                "raw_feature":  "RIDAGEYR",
+                                                                "label":  "RIDAGEYR",
+                                                                "original_value":  52.0,
+                                                                "transformed_value":  0.328318,
+                                                                "contribution":  0.621526,
+                                                                "wording":  "contributed to the model score",
+                                                                "interpretation":  "associated with a higher model estimate"
+                                                            },
+                                                            {
+                                                                "feature":  "DMDEDUC2_4",
+                                                                "raw_feature":  "DMDEDUC2",
+                                                                "label":  "DMDEDUC2",
+                                                                "original_value":  4.0,
+                                                                "transformed_value":  1.687279,
+                                                                "contribution":  0.290533,
+                                                                "wording":  "contributed to the model score",
+                                                                "interpretation":  "associated with a higher model estimate"
+                                                            },
+                                                            {
+                                                                "feature":  "RHD280_missing",
+                                                                "raw_feature":  "RHD280",
+                                                                "label":  "RHD280",
+                                                                "original_value":  2.0,
+                                                                "transformed_value":  -0.475256,
+                                                                "contribution":  0.283026,
+                                                                "wording":  "contributed to the model score",
+                                                                "interpretation":  "associated with a higher model estimate"
+                                                            },
+                                                            {
+                                                                "feature":  "RHD280_2",
+                                                                "raw_feature":  "RHD280",
+                                                                "label":  "RHD280",
+                                                                "original_value":  2.0,
+                                                                "transformed_value":  0.549959,
+                                                                "contribution":  0.254287,
+                                                                "wording":  "contributed to the model score",
+                                                                "interpretation":  "associated with a higher model estimate"
+                                                            },
+                                                            {
+                                                                "feature":  "DMDMARTZ_missing",
+                                                                "raw_feature":  "DMDMARTZ",
+                                                                "label":  "DMDMARTZ",
+                                                                "original_value":  1.0,
+                                                                "transformed_value":  -0.473754,
+                                                                "contribution":  0.209937,
+                                                                "wording":  "contributed to the model score",
+                                                                "interpretation":  "associated with a higher model estimate"
+                                                            }
+                                                        ],
+                         "top_negative_contributions":  [
+                                                            {
+                                                                "feature":  "RHQ200_1",
+                                                                "raw_feature":  "RHQ200",
+                                                                "label":  "RHQ200",
+                                                                "original_value":  1.0,
+                                                                "transformed_value":  11.80115,
+                                                                "contribution":  -1.078787,
+                                                                "wording":  "contributed to the model score",
+                                                                "interpretation":  "associated with a lower model estimate"
+                                                            },
+                                                            {
+                                                                "feature":  "RHQ131_missing",
+                                                                "raw_feature":  "RHQ131",
+                                                                "label":  "RHQ131",
+                                                                "original_value":  1.0,
+                                                                "transformed_value":  -1.041973,
+                                                                "contribution":  -0.524894,
+                                                                "wording":  "contributed to the model score",
+                                                                "interpretation":  "associated with a lower model estimate"
+                                                            },
+                                                            {
+                                                                "feature":  "URXPREG_2",
+                                                                "raw_feature":  "URXPREG",
+                                                                "label":  "Urine pregnancy test",
+                                                                "original_value":  2.0,
+                                                                "transformed_value":  1.500802,
+                                                                "contribution":  -0.488849,
+                                                                "wording":  "contributed to the model score",
+                                                                "interpretation":  "associated with a lower model estimate"
+                                                            },
+                                                            {
+                                                                "feature":  "URXPREG_missing",
+                                                                "raw_feature":  "URXPREG",
+                                                                "label":  "Urine pregnancy test",
+                                                                "original_value":  2.0,
+                                                                "transformed_value":  -1.453582,
+                                                                "contribution":  -0.48245,
+                                                                "wording":  "contributed to the model score",
+                                                                "interpretation":  "associated with a lower model estimate"
+                                                            },
+                                                            {
+                                                                "feature":  "RHQ078_missing",
+                                                                "raw_feature":  "RHQ078",
+                                                                "label":  "RHQ078",
+                                                                "original_value":  2.0,
+                                                                "transformed_value":  -0.95289,
+                                                                "contribution":  -0.449486,
+                                                                "wording":  "contributed to the model score",
+                                                                "interpretation":  "associated with a lower model estimate"
+                                                            }
+                                                        ]
+                     },
+    "privacy_note":  "The API does not intentionally store submitted participant feature values. Avoid sending names, contact details, or other direct identifiers."
+}

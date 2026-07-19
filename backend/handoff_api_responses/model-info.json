@@ -1,0 +1,80 @@
+{
+    "model_version":  "nhanes-menopause-logreg-v1",
+    "title":  "Menopause-related menstrual-change model estimate",
+    "model_type":  "class-balanced binary logistic regression",
+    "implementation":  "NumPy gradient descent",
+    "target":  {
+                   "plain_language":  "Whether an NHANES participant self-reported menopause/change of life as the reason for not having regular periods.",
+                   "positive_definition":  "RHD043 == 7, menopause/change of life",
+                   "negative_definition":  "RHQ031 == 1, had regular periods in past 12 months",
+                   "not_clinically_confirmed":  true
+               },
+    "dataset":  {
+                    "name":  "NHANES August 2021-August 2023",
+                    "merged_modules":  [
+                                           "demographics",
+                                           "reproductive health questionnaire",
+                                           "body measurements",
+                                           "sex steroid hormone panel",
+                                           "glucose, insulin, and glycohemoglobin",
+                                           "inflammation marker",
+                                           "biochemistry profile",
+                                           "lipids",
+                                           "pregnancy test"
+                                       ],
+                    "join_key":  "SEQN"
+                },
+    "performance":  {
+                        "n_test":  527,
+                        "accuracy":  0.9507,
+                        "precision":  0.924,
+                        "recall":  0.9706,
+                        "f1":  0.9467,
+                        "roc_auc":  0.9939,
+                        "threshold":  0.52,
+                        "confusion_matrix":  {
+                                                 "true_negative":  270,
+                                                 "false_positive":  19,
+                                                 "false_negative":  7,
+                                                 "true_positive":  231
+                                             },
+                        "task":  "menopause",
+                        "task_label":  "Menopause/change of life",
+                        "n_raw_merged_rows":  3917,
+                        "n_benchmark_rows":  2632,
+                        "n_train":  2105,
+                        "n_positive":  1136,
+                        "n_negative":  1496,
+                        "positive_definition":  "RHD043 == 7, menopause/change of life",
+                        "negative_definition":  "RHQ031 == 1, had regular periods in past 12 months"
+                    },
+    "likelihood_bands":  [
+                             {
+                                 "band":  "lower",
+                                 "min_probability":  0.0,
+                                 "max_probability":  0.33,
+                                 "label":  "Lower model-estimated likelihood"
+                             },
+                             {
+                                 "band":  "moderate",
+                                 "min_probability":  0.33,
+                                 "max_probability":  0.66,
+                                 "label":  "Moderate model-estimated likelihood"
+                             },
+                             {
+                                 "band":  "higher",
+                                 "min_probability":  0.66,
+                                 "max_probability":  1.0,
+                                 "label":  "Higher model-estimated likelihood"
+                             }
+                         ],
+    "limitations":  [
+                        "The target is self-reported in NHANES and is not clinically confirmed menopause.",
+                        "The model is a research prototype, not a diagnosis or validated clinical risk score.",
+                        "NHANES is cross-sectional, so the model should not be interpreted as predicting future menopause.",
+                        "Features contributed to the model score; they should not be interpreted as causes.",
+                        "The API does not provide treatment or medication recommendations."
+                    ],
+    "privacy_note":  "The API does not intentionally store submitted participant feature values. Avoid sending names, contact details, or other direct identifiers.",
+    "non_diagnostic_explanation":  "This result is a model estimate for the benchmark target: whether an NHANES participant self-reported menopause/change of life as the reason for not having regular periods. It is not clinically confirmed menopause, not a clinical diagnosis, and not a validated clinical risk score."
+}

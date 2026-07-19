@@ -1,0 +1,6 @@
+{
+  "status_code": 422,
+  "body": {
+    "detail": "Unknown feature(s): ['not_a_feature']"
+  }
+}

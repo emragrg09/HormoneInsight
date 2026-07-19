@@ -1,0 +1,25 @@
+{"kind":"deck","id":"pr/0gu4jk","name":"Deck"}
+{"kind":"layout","layoutId":"456d17f2-df1d-4f96-92ba-4377316516b0","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"2da1456f-03e4-4ea9-822e-90faab99296c","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/ju92ig","slide":1,"title":"TECH ARCHITECTURE","textShapes":11}
+{"kind":"textbox","id":"sh/czed8v6p","slide":1,"text":"TECH ARCHITECTURE","textPreview":"TECH ARCHITECTURE","textChars":17,"textLines":1,"bbox":[72,52,420,28]}
+{"kind":"textbox","id":"sh/neloj2t8","slide":1,"text":"Backend architecture for the model estimate","textPreview":"Backend architecture for the model estimate","textChars":43,"textLines":1,"bbox":[72,98,1080,54]}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":1,"text":"A saved NumPy logistic-regression model is trained on linked NHANES 2021-2023 modules.","textPreview":"A saved NumPy logistic-regression model is trained on linked NHANES 2021-2023 modules.","textChars":86,"textLines":1,"bbox":[72,172,1030,42]}
+{"kind":"shape","id":"sh/5sneloj2","slide":1,"bbox":[105,265,310,184]}
+{"kind":"shape","id":"sh/cbulwval","slide":1,"bbox":[105,265,7,184]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":1,"text":"1. Data","textPreview":"1. Data","textChars":7,"textLines":1,"bbox":[127,283,266,32]}
+{"kind":"textbox","id":"sh/u54zidon","slide":1,"text":"NHANES modules merged by SEQN: demographics, reproductive health, body measures, hormones, labs, lipids, and pregnancy test.","textPreview":"NHANES modules merged by SEQN: demographics, reproductive health, body measures, hormones, labs, lipids, and pregnancy test.","textChars":124,"textLines":1,"bbox":[127,323,266,118]}
+{"kind":"shape","id":"sh/5wjudg7a","slide":1,"bbox":[441,343,30,28]}
+{"kind":"shape","id":"sh/gbq1oryt","slide":1,"bbox":[497,265,310,184]}
+{"kind":"shape","id":"sh/qxs72x4n","slide":1,"bbox":[497,265,7,184]}
+{"kind":"textbox","id":"sh/fil0rqd4","slide":1,"text":"2. Model","textPreview":"2. Model","textChars":8,"textLines":1,"bbox":[519,283,266,32]}
+{"kind":"textbox","id":"sh/83itgfml","slide":1,"text":"Class-balanced logistic regression in NumPy. Target: self-reported menopause/change of life as reason for no regular periods.","textPreview":"Class-balanced logistic regression in NumPy. Target: self-reported menopause/change of life as reason for no regular periods.","textChars":125,"textLines":1,"bbox":[519,323,266,118]}
+{"kind":"shape","id":"sh/xobm58z2","slide":1,"bbox":[833,343,30,28]}
+{"kind":"shape","id":"sh/m94fu18j","slide":1,"bbox":[889,265,310,184]}
+{"kind":"shape","id":"sh/fu18jqh0","slide":1,"bbox":[889,265,7,184]}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":1,"text":"3. Artifacts","textPreview":"3. Artifacts","textChars":12,"textLines":1,"bbox":[911,283,266,32]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":1,"text":"Saved weights, bias, feature order, imputation, category mappings, scaling parameters, threshold, metrics, and metadata.","textPreview":"Saved weights, bias, feature order, imputation, category mappings, scaling parameters, threshold, metrics, and metadata.","textChars":120,"textLines":1,"bbox":[911,323,266,118]}
+{"kind":"shape","id":"sh/mlkjm1cf","slide":1,"bbox":[154,525,972,74]}
+{"kind":"textbox","id":"sh/f6dcbulw","slide":1,"text":"Careful wording: this is a model estimate based on self-reported NHANES data, not clinically confirmed menopause, not a diagnosis, and not treatment advice.","textPreview":"Careful wording: this is a model estimate based on self-reported NHANES data, not clinically confirmed menopause, not a diagnosis, and no...","textChars":156,"textLines":1,"bbox":[188,543,904,44]}
+{"kind":"textbox","id":"sh/36hcrmhk","slide":1,"text":"Research prototype. Not a clinical diagnosis.","textPreview":"Research prototype. Not a clinical diagnosis.","textChars":45,"textLines":1,"bbox":[72,664,620,24]}
+{"kind":"notes","id":"nt/ju92ig","slide":1,"text":""}

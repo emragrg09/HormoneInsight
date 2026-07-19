@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="162" viewBox="0 0 920 162">
+<style>text{font-family:Arial,sans-serif;fill:#1f2933} .muted{fill:#52606d} .bar{fill:#2f80ed} .axis{stroke:#d9e2ec;stroke-width:1}</style>
+<text x="20" y="32" font-size="22" font-weight="700">Class balance: Menopause/change of life</text>
+<text x="20" y="79" font-size="14">Negative class</text>
+<rect class="bar" x="260" y="64" width="600.0" height="18" rx="3"/>
+<text class="muted" x="868.0" y="79" font-size="13">1496.000</text>
+<text x="20" y="113" font-size="14">Positive class</text>
+<rect class="bar" x="260" y="98" width="455.6" height="18" rx="3"/>
+<text class="muted" x="723.6149732620321" y="113" font-size="13">1136.000</text>
+</svg>

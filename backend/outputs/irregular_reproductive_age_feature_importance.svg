@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="502" viewBox="0 0 920 502">
+<style>text{font-family:Arial,sans-serif;fill:#1f2933} .muted{fill:#52606d} .bar{fill:#2f80ed} .axis{stroke:#d9e2ec;stroke-width:1}</style>
+<text x="20" y="32" font-size="22" font-weight="700">Top predictors: Non-menopause no-period signal, ages 20-45</text>
+<text x="20" y="79" font-size="14">BMXHIP</text>
+<rect class="bar" x="260" y="64" width="600.0" height="18" rx="3"/>
+<text class="muted" x="868.0" y="79" font-size="13">0.959</text>
+<text x="20" y="113" font-size="14">LBXSIR</text>
+<rect class="bar" x="260" y="98" width="558.6" height="18" rx="3"/>
+<text class="muted" x="826.619464658967" y="113" font-size="13">0.892</text>
+<text x="20" y="147" font-size="14">LBXSHBG</text>
+<rect class="bar" x="260" y="132" width="528.5" height="18" rx="3"/>
+<text class="muted" x="796.497276844538" y="147" font-size="13">0.844</text>
+<text x="20" y="181" font-size="14">LBXPG4</text>
+<rect class="bar" x="260" y="166" width="520.8" height="18" rx="3"/>
+<text class="muted" x="788.8381305505511" y="181" font-size="13">0.832</text>
+<text x="20" y="215" font-size="14">BMXWT</text>
+<rect class="bar" x="260" y="200" width="455.0" height="18" rx="3"/>
+<text class="muted" x="722.9824190378083" y="215" font-size="13">0.727</text>
+<text x="20" y="249" font-size="14">LBXSGL</text>
+<rect class="bar" x="260" y="234" width="451.2" height="18" rx="3"/>
+<text class="muted" x="719.2240934790244" y="249" font-size="13">0.721</text>
+<text x="20" y="283" font-size="14">BMXARMC</text>
+<rect class="bar" x="260" y="268" width="372.7" height="18" rx="3"/>
+<text class="muted" x="640.6504584800555" y="283" font-size="13">0.595</text>
+<text x="20" y="317" font-size="14">RHQ200_1</text>
+<rect class="bar" x="260" y="302" width="339.3" height="18" rx="3"/>
+<text class="muted" x="607.2833540925276" y="317" font-size="13">0.542</text>
+<text x="20" y="351" font-size="14">RIDRETH3_4</text>
+<rect class="bar" x="260" y="336" width="304.2" height="18" rx="3"/>
+<text class="muted" x="572.2209169560869" y="351" font-size="13">0.486</text>
+<text x="20" y="385" font-size="14">LBXDHE</text>
+<rect class="bar" x="260" y="370" width="302.5" height="18" rx="3"/>
+<text class="muted" x="570.522244562829" y="385" font-size="13">0.483</text>
+<text x="20" y="419" font-size="14">LBXSTB</text>
+<rect class="bar" x="260" y="404" width="278.1" height="18" rx="3"/>
+<text class="muted" x="546.1163052974653" y="419" font-size="13">0.444</text>
+<text x="20" y="453" font-size="14">URXPREG_missing</text>
+<rect class="bar" x="260" y="438" width="269.2" height="18" rx="3"/>
+<text class="muted" x="537.1891879321838" y="453" font-size="13">0.430</text>
+</svg>

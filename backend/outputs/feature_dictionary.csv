@@ -1,0 +1,52 @@
+feature,description,type,source
+RIDAGEYR,,numeric,NHANES survey/exam
+RIDRETH3,,categorical,NHANES survey/exam
+DMDEDUC2,,categorical,NHANES survey/exam
+DMDMARTZ,,categorical,NHANES survey/exam
+INDFMPIR,,numeric,NHANES survey/exam
+RIDEXPRG,,categorical,NHANES survey/exam
+RHQ010,,numeric,NHANES survey/exam
+RHQ078,,categorical,NHANES survey/exam
+RHQ131,,categorical,NHANES survey/exam
+RHD167,,numeric,NHANES survey/exam
+RHQ200,,categorical,NHANES survey/exam
+RHD280,,categorical,NHANES survey/exam
+RHQ305,,categorical,NHANES survey/exam
+BMXWT,,numeric,NHANES survey/exam
+BMXHT,,numeric,NHANES survey/exam
+BMXBMI,,numeric,NHANES survey/exam
+BMXLEG,,numeric,NHANES survey/exam
+BMXARML,,numeric,NHANES survey/exam
+BMXARMC,,numeric,NHANES survey/exam
+BMXWAIST,,numeric,NHANES survey/exam
+BMXHIP,,numeric,NHANES survey/exam
+LBXAND,Androstenedione,numeric,NHANES laboratory
+LBXAMH,Anti-Mullerian hormone,numeric,NHANES laboratory
+LBXDHE,DHEA,numeric,NHANES laboratory
+LBXEST,Estradiol,numeric,NHANES laboratory
+LBXESO,Estrone,numeric,NHANES laboratory
+LBXPG4,Progesterone,numeric,NHANES laboratory
+LBXSHBG,Sex hormone binding globulin,numeric,NHANES laboratory
+LBXTST,Total testosterone,numeric,NHANES laboratory
+LBXIN,Insulin,numeric,NHANES laboratory
+LBXGLU,Fasting glucose,numeric,NHANES laboratory
+LBXGH,Glycohemoglobin,numeric,NHANES laboratory
+LBXHSCRP,High-sensitivity C-reactive protein,numeric,NHANES laboratory
+LBXSAL,Albumin,numeric,NHANES laboratory
+LBXSAPSI,Alkaline phosphatase,numeric,NHANES laboratory
+LBXSASSI,AST,numeric,NHANES laboratory
+LBXSATSI,ALT,numeric,NHANES laboratory
+LBXSBU,Blood urea nitrogen,numeric,NHANES laboratory
+LBXSCA,Calcium,numeric,NHANES laboratory
+LBXSCR,Creatinine,numeric,NHANES laboratory
+LBXSGL,"Glucose, serum",numeric,NHANES laboratory
+LBXSIR,Iron,numeric,NHANES laboratory
+LBXSTB,Total bilirubin,numeric,NHANES laboratory
+LBXSTP,Total protein,numeric,NHANES laboratory
+LBXSTR,"Triglycerides, biochemistry profile",numeric,NHANES laboratory
+LBXSUA,Uric acid,numeric,NHANES laboratory
+LBDHDD,HDL cholesterol,numeric,NHANES laboratory
+LBXTC,Total cholesterol,numeric,NHANES laboratory
+LBXTLG,Triglycerides,numeric,NHANES laboratory
+LBDLDL,LDL cholesterol,numeric,NHANES laboratory
+URXPREG,Urine pregnancy test,categorical,NHANES laboratory

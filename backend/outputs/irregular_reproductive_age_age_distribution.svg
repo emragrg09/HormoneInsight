@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="638" viewBox="0 0 920 638">
+<style>text{font-family:Arial,sans-serif;fill:#1f2933} .muted{fill:#52606d} .bar{fill:#2f80ed} .axis{stroke:#d9e2ec;stroke-width:1}</style>
+<text x="20" y="32" font-size="22" font-weight="700">Age distribution: Non-menopause no-period signal, ages 20-45</text>
+<text x="20" y="79" font-size="14">12-19 negative</text>
+<rect class="bar" x="260" y="64" width="0.0" height="18" rx="3"/>
+<text class="muted" x="268.0" y="79" font-size="13">0.000</text>
+<text x="20" y="113" font-size="14">12-19 positive</text>
+<rect class="bar" x="260" y="98" width="0.0" height="18" rx="3"/>
+<text class="muted" x="268.0" y="113" font-size="13">0.000</text>
+<text x="20" y="147" font-size="14">20-29 negative</text>
+<rect class="bar" x="260" y="132" width="470.8" height="18" rx="3"/>
+<text class="muted" x="738.8446866485015" y="147" font-size="13">288.000</text>
+<text x="20" y="181" font-size="14">20-29 positive</text>
+<rect class="bar" x="260" y="166" width="27.8" height="18" rx="3"/>
+<text class="muted" x="295.79291553133515" y="181" font-size="13">17.000</text>
+<text x="20" y="215" font-size="14">30-39 negative</text>
+<rect class="bar" x="260" y="200" width="600.0" height="18" rx="3"/>
+<text class="muted" x="868.0" y="215" font-size="13">367.000</text>
+<text x="20" y="249" font-size="14">30-39 positive</text>
+<rect class="bar" x="260" y="234" width="54.0" height="18" rx="3"/>
+<text class="muted" x="321.9509536784741" y="249" font-size="13">33.000</text>
+<text x="20" y="283" font-size="14">40-49 negative</text>
+<rect class="bar" x="260" y="268" width="328.6" height="18" rx="3"/>
+<text class="muted" x="596.6103542234332" y="283" font-size="13">201.000</text>
+<text x="20" y="317" font-size="14">40-49 positive</text>
+<rect class="bar" x="260" y="302" width="24.5" height="18" rx="3"/>
+<text class="muted" x="292.5231607629428" y="317" font-size="13">15.000</text>
+<text x="20" y="351" font-size="14">50-59 negative</text>
+<rect class="bar" x="260" y="336" width="0.0" height="18" rx="3"/>
+<text class="muted" x="268.0" y="351" font-size="13">0.000</text>
+<text x="20" y="385" font-size="14">50-59 positive</text>
+<rect class="bar" x="260" y="370" width="0.0" height="18" rx="3"/>
+<text class="muted" x="268.0" y="385" font-size="13">0.000</text>
+<text x="20" y="419" font-size="14">60-69 negative</text>
+<rect class="bar" x="260" y="404" width="0.0" height="18" rx="3"/>
+<text class="muted" x="268.0" y="419" font-size="13">0.000</text>
+<text x="20" y="453" font-size="14">60-69 positive</text>
+<rect class="bar" x="260" y="438" width="0.0" height="18" rx="3"/>
+<text class="muted" x="268.0" y="453" font-size="13">0.000</text>
+<text x="20" y="487" font-size="14">70-79 negative</text>
+<rect class="bar" x="260" y="472" width="0.0" height="18" rx="3"/>
+<text class="muted" x="268.0" y="487" font-size="13">0.000</text>
+<text x="20" y="521" font-size="14">70-79 positive</text>
+<rect class="bar" x="260" y="506" width="0.0" height="18" rx="3"/>
+<text class="muted" x="268.0" y="521" font-size="13">0.000</text>
+<text x="20" y="555" font-size="14">80-89 negative</text>
+<rect class="bar" x="260" y="540" width="0.0" height="18" rx="3"/>
+<text class="muted" x="268.0" y="555" font-size="13">0.000</text>
+<text x="20" y="589" font-size="14">80-89 positive</text>
+<rect class="bar" x="260" y="574" width="0.0" height="18" rx="3"/>
+<text class="muted" x="268.0" y="589" font-size="13">0.000</text>
+</svg>

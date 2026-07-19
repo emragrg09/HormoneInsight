@@ -1,0 +1,799 @@
+{
+    "model_version":  "nhanes-menopause-logreg-v1",
+    "title":  "Menopause-related menstrual-change model estimate",
+    "raw_feature_order":  [
+                              "RIDAGEYR",
+                              "RIDRETH3",
+                              "DMDEDUC2",
+                              "DMDMARTZ",
+                              "INDFMPIR",
+                              "RIDEXPRG",
+                              "RHQ010",
+                              "RHQ078",
+                              "RHQ131",
+                              "RHD167",
+                              "RHQ200",
+                              "RHD280",
+                              "RHQ305",
+                              "BMXWT",
+                              "BMXHT",
+                              "BMXBMI",
+                              "BMXLEG",
+                              "BMXARML",
+                              "BMXARMC",
+                              "BMXWAIST",
+                              "BMXHIP",
+                              "LBXAND",
+                              "LBXAMH",
+                              "LBXDHE",
+                              "LBXEST",
+                              "LBXESO",
+                              "LBXPG4",
+                              "LBXSHBG",
+                              "LBXTST",
+                              "LBXIN",
+                              "LBXGLU",
+                              "LBXGH",
+                              "LBXHSCRP",
+                              "LBXSAL",
+                              "LBXSAPSI",
+                              "LBXSASSI",
+                              "LBXSATSI",
+                              "LBXSBU",
+                              "LBXSCA",
+                              "LBXSCR",
+                              "LBXSGL",
+                              "LBXSIR",
+                              "LBXSTB",
+                              "LBXSTP",
+                              "LBXSTR",
+                              "LBXSUA",
+                              "LBDHDD",
+                              "LBXTC",
+                              "LBXTLG",
+                              "LBDLDL",
+                              "URXPREG"
+                          ],
+    "numeric_features":  [
+                             "RIDAGEYR",
+                             "INDFMPIR",
+                             "RHQ010",
+                             "RHD167",
+                             "BMXWT",
+                             "BMXHT",
+                             "BMXBMI",
+                             "BMXLEG",
+                             "BMXARML",
+                             "BMXARMC",
+                             "BMXWAIST",
+                             "BMXHIP",
+                             "LBXAND",
+                             "LBXAMH",
+                             "LBXDHE",
+                             "LBXEST",
+                             "LBXESO",
+                             "LBXPG4",
+                             "LBXSHBG",
+                             "LBXTST",
+                             "LBXIN",
+                             "LBXGLU",
+                             "LBXGH",
+                             "LBXHSCRP",
+                             "LBXSAL",
+                             "LBXSAPSI",
+                             "LBXSASSI",
+                             "LBXSATSI",
+                             "LBXSBU",
+                             "LBXSCA",
+                             "LBXSCR",
+                             "LBXSGL",
+                             "LBXSIR",
+                             "LBXSTB",
+                             "LBXSTP",
+                             "LBXSTR",
+                             "LBXSUA",
+                             "LBDHDD",
+                             "LBXTC",
+                             "LBXTLG",
+                             "LBDLDL"
+                         ],
+    "categorical_features":  [
+                                 "RIDRETH3",
+                                 "DMDEDUC2",
+                                 "DMDMARTZ",
+                                 "RIDEXPRG",
+                                 "RHQ078",
+                                 "RHQ131",
+                                 "RHQ200",
+                                 "RHD280",
+                                 "RHQ305",
+                                 "URXPREG"
+                             ],
+    "category_mappings":  {
+                              "RIDRETH3":  [
+                                               "1",
+                                               "2",
+                                               "3",
+                                               "4",
+                                               "6",
+                                               "7",
+                                               "missing"
+                                           ],
+                              "DMDEDUC2":  [
+                                               "1",
+                                               "2",
+                                               "3",
+                                               "4",
+                                               "5",
+                                               "missing"
+                                           ],
+                              "DMDMARTZ":  [
+                                               "1",
+                                               "2",
+                                               "3",
+                                               "missing"
+                                           ],
+                              "RIDEXPRG":  [
+                                               "1",
+                                               "2",
+                                               "missing"
+                                           ],
+                              "RHQ078":  [
+                                             "1",
+                                             "2",
+                                             "missing"
+                                         ],
+                              "RHQ131":  [
+                                             "1",
+                                             "2",
+                                             "missing"
+                                         ],
+                              "RHQ200":  [
+                                             "1",
+                                             "2",
+                                             "missing"
+                                         ],
+                              "RHD280":  [
+                                             "1",
+                                             "2",
+                                             "missing"
+                                         ],
+                              "RHQ305":  [
+                                             "1",
+                                             "2",
+                                             "missing"
+                                         ],
+                              "URXPREG":  [
+                                              "1",
+                                              "2",
+                                              "missing"
+                                          ]
+                          },
+    "features":  [
+                     {
+                         "name":  "RIDAGEYR",
+                         "label":  "RIDAGEYR",
+                         "description":  "",
+                         "type":  "numeric",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "RIDRETH3",
+                         "label":  "RIDRETH3",
+                         "description":  "",
+                         "type":  "categorical",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "DMDEDUC2",
+                         "label":  "DMDEDUC2",
+                         "description":  "",
+                         "type":  "categorical",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+                                               7,
+                                               9
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "DMDMARTZ",
+                         "label":  "DMDMARTZ",
+                         "description":  "",
+                         "type":  "categorical",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+                                               77,
+                                               99
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "INDFMPIR",
+                         "label":  "INDFMPIR",
+                         "description":  "",
+                         "type":  "numeric",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "RIDEXPRG",
+                         "label":  "RIDEXPRG",
+                         "description":  "",
+                         "type":  "categorical",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+                                               3
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "RHQ010",
+                         "label":  "RHQ010",
+                         "description":  "",
+                         "type":  "numeric",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+                                               777,
+                                               999
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "RHQ078",
+                         "label":  "RHQ078",
+                         "description":  "",
+                         "type":  "categorical",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+                                               7,
+                                               9
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "RHQ131",
+                         "label":  "RHQ131",
+                         "description":  "",
+                         "type":  "categorical",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+                                               7,
+                                               9
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "RHD167",
+                         "label":  "RHD167",
+                         "description":  "",
+                         "type":  "numeric",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+                                               77,
+                                               99
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "RHQ200",
+                         "label":  "RHQ200",
+                         "description":  "",
+                         "type":  "categorical",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+                                               7,
+                                               9
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "RHD280",
+                         "label":  "RHD280",
+                         "description":  "",
+                         "type":  "categorical",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+                                               7,
+                                               9
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "RHQ305",
+                         "label":  "RHQ305",
+                         "description":  "",
+                         "type":  "categorical",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+                                               7,
+                                               9
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "BMXWT",
+                         "label":  "BMXWT",
+                         "description":  "",
+                         "type":  "numeric",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "BMXHT",
+                         "label":  "BMXHT",
+                         "description":  "",
+                         "type":  "numeric",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "BMXBMI",
+                         "label":  "BMXBMI",
+                         "description":  "",
+                         "type":  "numeric",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "BMXLEG",
+                         "label":  "BMXLEG",
+                         "description":  "",
+                         "type":  "numeric",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "BMXARML",
+                         "label":  "BMXARML",
+                         "description":  "",
+                         "type":  "numeric",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "BMXARMC",
+                         "label":  "BMXARMC",
+                         "description":  "",
+                         "type":  "numeric",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "BMXWAIST",
+                         "label":  "BMXWAIST",
+                         "description":  "",
+                         "type":  "numeric",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "BMXHIP",
+                         "label":  "BMXHIP",
+                         "description":  "",
+                         "type":  "numeric",
+                         "source":  "NHANES survey/exam",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXAND",
+                         "label":  "Androstenedione",
+                         "description":  "Androstenedione",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXAMH",
+                         "label":  "Anti-Mullerian hormone",
+                         "description":  "Anti-Mullerian hormone",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXDHE",
+                         "label":  "DHEA",
+                         "description":  "DHEA",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXEST",
+                         "label":  "Estradiol",
+                         "description":  "Estradiol",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXESO",
+                         "label":  "Estrone",
+                         "description":  "Estrone",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXPG4",
+                         "label":  "Progesterone",
+                         "description":  "Progesterone",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXSHBG",
+                         "label":  "Sex hormone binding globulin",
+                         "description":  "Sex hormone binding globulin",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXTST",
+                         "label":  "Total testosterone",
+                         "description":  "Total testosterone",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXIN",
+                         "label":  "Insulin",
+                         "description":  "Insulin",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXGLU",
+                         "label":  "Fasting glucose",
+                         "description":  "Fasting glucose",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXGH",
+                         "label":  "Glycohemoglobin",
+                         "description":  "Glycohemoglobin",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXHSCRP",
+                         "label":  "High-sensitivity C-reactive protein",
+                         "description":  "High-sensitivity C-reactive protein",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXSAL",
+                         "label":  "Albumin",
+                         "description":  "Albumin",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXSAPSI",
+                         "label":  "Alkaline phosphatase",
+                         "description":  "Alkaline phosphatase",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXSASSI",
+                         "label":  "AST",
+                         "description":  "AST",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXSATSI",
+                         "label":  "ALT",
+                         "description":  "ALT",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXSBU",
+                         "label":  "Blood urea nitrogen",
+                         "description":  "Blood urea nitrogen",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXSCA",
+                         "label":  "Calcium",
+                         "description":  "Calcium",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXSCR",
+                         "label":  "Creatinine",
+                         "description":  "Creatinine",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXSGL",
+                         "label":  "Glucose, serum",
+                         "description":  "Glucose, serum",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXSIR",
+                         "label":  "Iron",
+                         "description":  "Iron",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXSTB",
+                         "label":  "Total bilirubin",
+                         "description":  "Total bilirubin",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXSTP",
+                         "label":  "Total protein",
+                         "description":  "Total protein",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXSTR",
+                         "label":  "Triglycerides, biochemistry profile",
+                         "description":  "Triglycerides, biochemistry profile",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXSUA",
+                         "label":  "Uric acid",
+                         "description":  "Uric acid",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBDHDD",
+                         "label":  "HDL cholesterol",
+                         "description":  "HDL cholesterol",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXTC",
+                         "label":  "Total cholesterol",
+                         "description":  "Total cholesterol",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBXTLG",
+                         "label":  "Triglycerides",
+                         "description":  "Triglycerides",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "LBDLDL",
+                         "label":  "LDL cholesterol",
+                         "description":  "LDL cholesterol",
+                         "type":  "numeric",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     },
+                     {
+                         "name":  "URXPREG",
+                         "label":  "Urine pregnancy test",
+                         "description":  "Urine pregnancy test",
+                         "type":  "categorical",
+                         "source":  "NHANES laboratory",
+                         "missing_codes":  [
+                                               3
+                                           ],
+                         "required":  false,
+                         "accepts_null":  true
+                     }
+                 ],
+    "classification_threshold":  0.52,
+    "missing_value_policy":  "Missing numeric values use train-split median imputation from the saved artifact. Missing categorical values use the saved \u0027missing\u0027 category. Missing values are not silently converted to zero.",
+    "privacy_note":  "The API does not intentionally store submitted participant feature values. Avoid sending names, contact details, or other direct identifiers.",
+    "non_diagnostic_explanation":  "This result is a model estimate for the benchmark target: whether an NHANES participant self-reported menopause/change of life as the reason for not having regular periods. It is not clinically confirmed menopause, not a clinical diagnosis, and not a validated clinical risk score."
+}

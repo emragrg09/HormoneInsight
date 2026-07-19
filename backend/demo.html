@@ -1,0 +1,310 @@
+<div class="app-shell">
+  <aside class="sidebar">
+    <div>
+      <p class="eyebrow">Women's Hormonal Health</p>
+      <h1>Open NHANES Menopause Benchmark</h1>
+      <p class="lede">
+        A public, reproducible benchmark for menopause-related hormonal health prediction using NHANES 2021-2023.
+      </p>
+    </div>
+    <nav aria-label="Demo sections">
+      <a href="#problem">Problem</a>
+      <a href="#prototype">Prototype</a>
+      <a href="#results">Results</a>
+      <a href="#responsible-ai">Responsible AI</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="problem" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Chosen Problem</p>
+        <h2>Menopause-related hormonal health prediction</h2>
+      </div>
+      <p>
+        The project asks for one reusable building block for women's hormonal health AI. This benchmark predicts whether a female NHANES participant reports menopause/change of life as the reason for not having regular periods, using public reproductive-health, body-measure, hormone, metabolic, inflammation, and lipid data.
+      </p>
+      <div class="stat-grid">
+        <div class="stat">
+          <span>Benchmark Rows</span>
+          <strong>2,632</strong>
+        </div>
+        <div class="stat">
+          <span>Positive Cases</span>
+          <strong>1,136</strong>
+        </div>
+        <div class="stat">
+          <span>Raw Merge Rows</span>
+          <strong>3,917</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="prototype" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Working Prototype</p>
+        <h2>Dataset builder + baseline model</h2>
+      </div>
+      <div class="workflow">
+        <div><span>1</span>Load NHANES XPT files</div>
+        <div><span>2</span>Merge by respondent ID</div>
+        <div><span>3</span>Create benchmark targets</div>
+        <div><span>4</span>Train logistic regression</div>
+        <div><span>5</span>Export metrics, predictions, charts</div>
+      </div>
+      <p>
+        The prototype is implemented in <code>src/baseline.py</code>. It is dependency-light, reproducible, and produces reusable processed datasets and evaluation artifacts.
+      </p>
+    </section>
+
+    <section id="results" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Results</p>
+        <h2>Baseline performance and explainability</h2>
+      </div>
+      <div class="result-grid">
+        <div class="metric">
+          <span>Accuracy</span>
+          <strong>0.9507</strong>
+        </div>
+        <div class="metric">
+          <span>F1</span>
+          <strong>0.9467</strong>
+        </div>
+        <div class="metric">
+          <span>ROC AUC</span>
+          <strong>0.9941</strong>
+        </div>
+      </div>
+      <div class="chart-row">
+        <figure>
+          <img src="outputs/menopause_feature_importance.svg" alt="Top predictors for the menopause benchmark">
+          <figcaption>Top logistic-regression predictors include age and hormone/biomarker variables.</figcaption>
+        </figure>
+        <figure>
+          <img src="outputs/menopause_age_distribution.svg" alt="Age distribution by menopause benchmark class">
+          <figcaption>The benchmark is strong but age remains a major signal, which is documented transparently.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="responsible-ai" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Responsible Design</p>
+        <h2>Research benchmark, not diagnosis</h2>
+      </div>
+      <ul class="checks">
+        <li>No medical advice or diagnosis.</li>
+        <li>Uses public de-identified NHANES data.</li>
+        <li>Documents target definitions, limitations, and class balance.</li>
+        <li>Frames the weaker reproductive-age task as evidence that richer longitudinal datasets are needed.</li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+<style>
+  :root {
+    color-scheme: light;
+    --ink: #1f2933;
+    --muted: #52606d;
+    --line: #d9e2ec;
+    --soft: #f5f7fa;
+    --accent: #2f80ed;
+    --green: #1f9d55;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--ink);
+    background: #ffffff;
+  }
+
+  .app-shell {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+  }
+
+  .sidebar {
+    padding: 32px 28px;
+    background: var(--soft);
+    border-right: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  h1,
+  h2,
+  p {
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 34px;
+    line-height: 1.08;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .eyebrow {
+    margin-bottom: 8px;
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+
+  .lede,
+  .section p,
+  .checks {
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  nav {
+    display: grid;
+    gap: 10px;
+  }
+
+  nav a {
+    color: var(--ink);
+    text-decoration: none;
+    padding: 10px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  main {
+    padding: 28px 44px 48px;
+  }
+
+  .section {
+    max-width: 1060px;
+    padding: 34px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .stat-grid,
+  .result-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 24px;
+  }
+
+  .stat,
+  .metric {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 18px;
+    background: #ffffff;
+  }
+
+  .stat span,
+  .metric span {
+    display: block;
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .stat strong,
+  .metric strong {
+    font-size: 30px;
+  }
+
+  .workflow {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(120px, 1fr));
+    gap: 10px;
+    margin: 22px 0;
+  }
+
+  .workflow div {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 14px;
+    min-height: 104px;
+    color: var(--muted);
+  }
+
+  .workflow span {
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+
+  code {
+    background: var(--soft);
+    padding: 2px 5px;
+    border-radius: 4px;
+  }
+
+  .chart-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  figure img {
+    width: 100%;
+    max-width: 920px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+  }
+
+  figcaption {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .checks {
+    padding-left: 22px;
+  }
+
+  @media (max-width: 880px) {
+    .app-shell {
+      grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+      border-right: 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    main {
+      padding: 24px;
+    }
+
+    .stat-grid,
+    .result-grid,
+    .workflow {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

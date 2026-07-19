@@ -1,0 +1,16 @@
+{
+  "status_code": 422,
+  "body": {
+    "detail": [
+      {
+        "type": "missing",
+        "loc": [
+          "body",
+          "features"
+        ],
+        "msg": "Field required",
+        "input": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="502" viewBox="0 0 920 502">
+<style>text{font-family:Arial,sans-serif;fill:#1f2933} .muted{fill:#52606d} .bar{fill:#2f80ed} .axis{stroke:#d9e2ec;stroke-width:1}</style>
+<text x="20" y="32" font-size="22" font-weight="700">Top predictors: Menopause/change of life</text>
+<text x="20" y="79" font-size="14">RIDAGEYR</text>
+<rect class="bar" x="260" y="64" width="600.0" height="18" rx="3"/>
+<text class="muted" x="868.0" y="79" font-size="13">1.893</text>
+<text x="20" y="113" font-size="14">LBXPG4</text>
+<rect class="bar" x="260" y="98" width="245.3" height="18" rx="3"/>
+<text class="muted" x="513.2893870603775" y="113" font-size="13">0.774</text>
+<text x="20" y="147" font-size="14">RHD280_missing</text>
+<rect class="bar" x="260" y="132" width="188.7" height="18" rx="3"/>
+<text class="muted" x="456.7495112373209" y="147" font-size="13">0.596</text>
+<text x="20" y="181" font-size="14">LBXAND</text>
+<rect class="bar" x="260" y="166" width="180.0" height="18" rx="3"/>
+<text class="muted" x="448.0164391832666" y="181" font-size="13">0.568</text>
+<text x="20" y="215" font-size="14">LBXSAPSI</text>
+<rect class="bar" x="260" y="200" width="160.9" height="18" rx="3"/>
+<text class="muted" x="428.9004518116501" y="215" font-size="13">0.508</text>
+<text x="20" y="249" font-size="14">RHQ131_missing</text>
+<rect class="bar" x="260" y="234" width="159.7" height="18" rx="3"/>
+<text class="muted" x="427.6623205964818" y="249" font-size="13">0.504</text>
+<text x="20" y="283" font-size="14">RHQ078_missing</text>
+<rect class="bar" x="260" y="268" width="149.5" height="18" rx="3"/>
+<text class="muted" x="417.50659748250035" y="283" font-size="13">0.472</text>
+<text x="20" y="317" font-size="14">RHD280_2</text>
+<rect class="bar" x="260" y="302" width="146.5" height="18" rx="3"/>
+<text class="muted" x="414.54846609641334" y="317" font-size="13">0.462</text>
+<text x="20" y="351" font-size="14">RHQ305_1</text>
+<rect class="bar" x="260" y="336" width="143.0" height="18" rx="3"/>
+<text class="muted" x="411.0475239441579" y="351" font-size="13">0.451</text>
+<text x="20" y="385" font-size="14">RHQ078_2</text>
+<rect class="bar" x="260" y="370" width="142.5" height="18" rx="3"/>
+<text class="muted" x="410.46559872207087" y="385" font-size="13">0.449</text>
+<text x="20" y="419" font-size="14">DMDMARTZ_missing</text>
+<rect class="bar" x="260" y="404" width="140.5" height="18" rx="3"/>
+<text class="muted" x="408.4507690076114" y="419" font-size="13">0.443</text>
+<text x="20" y="453" font-size="14">RHQ305_missing</text>
+<rect class="bar" x="260" y="438" width="138.5" height="18" rx="3"/>
+<text class="muted" x="406.5167838079392" y="453" font-size="13">0.437</text>
+</svg>

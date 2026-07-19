@@ -1,0 +1,78 @@
+{"kind":"deck","id":"pr/jd46l6","name":"Deck"}
+{"kind":"layout","layoutId":"b08b3423-d290-4633-8f40-a94fbf44ae94","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"5b50b6fc-5c96-4d04-a78a-de33bf3e5e49","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/2ulknz","slide":1,"title":"BACKEND ARCHITECTURE","textShapes":10}
+{"kind":"textbox","id":"sh/eloj2t83","slide":1,"text":"BACKEND ARCHITECTURE","textPreview":"BACKEND ARCHITECTURE","textChars":20,"textLines":1,"bbox":[72,54,640,26]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":1,"text":"We built a reusable model service behind the women-facing app","textPreview":"We built a reusable model service behind the women-facing app","textChars":61,"textLines":1,"bbox":[72,94,1020,96]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":1,"text":"FastAPI serves a saved NumPy logistic-regression model trained on public NHANES 2021-2023 data.","textPreview":"FastAPI serves a saved NumPy logistic-regression model trained on public NHANES 2021-2023 data.","textChars":95,"textLines":1,"bbox":[72,184,980,58]}
+{"kind":"textbox","id":"sh/7u54zido","slide":1,"text":"NHANES data","textPreview":"NHANES data","textChars":11,"textLines":1,"bbox":[92,326,210,44]}
+{"kind":"textbox","id":"sh/ed8bat47","slide":1,"text":"Training pipeline","textPreview":"Training pipeline","textChars":17,"textLines":1,"bbox":[365,326,250,44]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":1,"text":"Saved artifacts","textPreview":"Saved artifacts","textChars":15,"textLines":1,"bbox":[680,326,230,44]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":1,"text":"FastAPI","textPreview":"FastAPI","textChars":7,"textLines":1,"bbox":[975,326,170,44]}
+{"kind":"shape","id":"sh/7mp0bi9s","slide":1,"bbox":[315,337,39,22]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":1,"bbox":[628,337,39,22]}
+{"kind":"shape","id":"sh/0rqd4vmt","slide":1,"bbox":[922,337,40,22]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":1,"text":"The frontend never retrains the model. It calls a stable API that loads the saved model once at startup.","textPreview":"The frontend never retrains the model. It calls a stable API that loads the saved model once at startup.","textChars":104,"textLines":1,"bbox":[170,450,940,70]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":1,"text":"Research prototype. Not a clinical diagnosis.","textPreview":"Research prototype. Not a clinical diagnosis.","textChars":45,"textLines":1,"bbox":[72,664,620,24]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":1,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[1160,664,48,24]}
+{"kind":"notes","id":"nt/2ulknz","slide":1,"text":""}
+{"kind":"slide","id":"sl/1eb351","slide":2,"title":"DATA PIPELINE","textShapes":12}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":2,"text":"DATA PIPELINE","textPreview":"DATA PIPELINE","textChars":13,"textLines":1,"bbox":[72,54,640,26]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":2,"text":"The benchmark is built from linked NHANES modules","textPreview":"The benchmark is built from linked NHANES modules","textChars":49,"textLines":1,"bbox":[72,94,1020,96]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":2,"text":"Each module is merged by SEQN, the NHANES participant identifier.","textPreview":"Each module is merged by SEQN, the NHANES participant identifier.","textChars":65,"textLines":1,"bbox":[72,184,980,58]}
+{"kind":"shape","id":"sh/e9cvixcz","slide":2,"bbox":[72,292,340,192]}
+{"kind":"shape","id":"sh/3q5o7qpg","slide":2,"bbox":[72,292,7,192]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":2,"text":"Survey and exam","textPreview":"Survey and exam","textChars":15,"textLines":1,"bbox":[94,312,296,36]}
+{"kind":"textbox","id":"sh/lwval87e","slide":2,"text":"Demographics, reproductive health questionnaire, and body measurements.","textPreview":"Demographics, reproductive health questionnaire, and body measurements.","textChars":71,"textLines":1,"bbox":[94,354,296,114]}
+{"kind":"shape","id":"sh/ahoza1gv","slide":2,"bbox":[470,292,340,192]}
+{"kind":"shape","id":"sh/32lszqtc","slide":2,"bbox":[470,292,7,192]}
+{"kind":"textbox","id":"sh/rqd4vmtw","slide":2,"text":"Hormone and lab data","textPreview":"Hormone and lab data","textChars":20,"textLines":1,"bbox":[492,312,296,36]}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":2,"text":"Sex steroid hormones, glucose, insulin, glycohemoglobin, inflammation, biochemistry, lipids, and pregnancy test.","textPreview":"Sex steroid hormones, glucose, insulin, glycohemoglobin, inflammation, biochemistry, lipids, and pregnancy test.","textChars":112,"textLines":1,"bbox":[492,354,296,114]}
+{"kind":"shape","id":"sh/9w3m94fu","slide":2,"bbox":[868,292,340,192]}
+{"kind":"shape","id":"sh/kb6xkf6d","slide":2,"bbox":[868,292,7,192]}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":2,"text":"Target definition","textPreview":"Target definition","textChars":17,"textLines":1,"bbox":[890,312,296,36]}
+{"kind":"textbox","id":"sh/2t83itgf","slide":2,"text":"Self-reported menopause/change of life as the reason for not having regular periods.","textPreview":"Self-reported menopause/change of life as the reason for not having regular periods.","textChars":84,"textLines":1,"bbox":[890,354,296,114]}
+{"kind":"textbox","id":"sh/9knih4by","slide":2,"text":"This target is self-reported in NHANES. It is not clinically confirmed menopause.","textPreview":"This target is self-reported in NHANES. It is not clinically confirmed menopause.","textChars":81,"textLines":1,"bbox":[172,548,936,44]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":2,"text":"Research prototype. Not a clinical diagnosis.","textPreview":"Research prototype. Not a clinical diagnosis.","textChars":45,"textLines":1,"bbox":[72,664,620,24]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":2,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1160,664,48,24]}
+{"kind":"notes","id":"nt/1eb351","slide":2,"text":""}
+{"kind":"slide","id":"sl/0ve7o6","slide":3,"title":"MODEL AND ARTIFACTS","textShapes":12}
+{"kind":"textbox","id":"sh/fil0rqd4","slide":3,"text":"MODEL AND ARTIFACTS","textPreview":"MODEL AND ARTIFACTS","textChars":19,"textLines":1,"bbox":[72,54,640,26]}
+{"kind":"textbox","id":"sh/83itgfml","slide":3,"text":"Training creates a portable inference package","textPreview":"Training creates a portable inference package","textChars":45,"textLines":1,"bbox":[72,94,1020,96]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":3,"text":"The model is class-balanced logistic regression implemented with NumPy.","textPreview":"The model is class-balanced logistic regression implemented with NumPy.","textChars":71,"textLines":1,"bbox":[72,184,980,58]}
+{"kind":"shape","id":"sh/m94fu18j","slide":3,"bbox":[72,286,330,186]}
+{"kind":"shape","id":"sh/fu18jqh0","slide":3,"bbox":[72,286,7,186]}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":3,"text":"Model parameters","textPreview":"Model parameters","textChars":16,"textLines":1,"bbox":[94,306,286,36]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":3,"text":"Weights and bias are saved in a compressed NumPy artifact.","textPreview":"Weights and bias are saved in a compressed NumPy artifact.","textChars":58,"textLines":1,"bbox":[94,348,286,108]}
+{"kind":"shape","id":"sh/mlkjm1cf","slide":3,"bbox":[475,286,330,186]}
+{"kind":"shape","id":"sh/f6dcbulw","slide":3,"bbox":[475,286,7,186]}
+{"kind":"textbox","id":"sh/vixczed8","slide":3,"text":"Preprocessing","textPreview":"Preprocessing","textChars":13,"textLines":1,"bbox":[497,306,286,36]}
+{"kind":"textbox","id":"sh/2x4nap4r","slide":3,"text":"Feature order, imputation medians, category mappings, scaling means, and scaling standard deviations are saved.","textPreview":"Feature order, imputation medians, category mappings, scaling means, and scaling standard deviations are saved.","textChars":111,"textLines":1,"bbox":[497,348,286,108]}
+{"kind":"shape","id":"sh/donyd0z6","slide":3,"bbox":[878,286,330,186]}
+{"kind":"shape","id":"sh/k3q5o7qp","slide":3,"bbox":[878,286,7,186]}
+{"kind":"textbox","id":"sh/val87ed8","slide":3,"text":"Decision rule","textPreview":"Decision rule","textChars":13,"textLines":1,"bbox":[900,306,286,36]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":3,"text":"The classification threshold, evaluation metrics, and metadata are saved in JSON.","textPreview":"The classification threshold, evaluation metrics, and metadata are saved in JSON.","textChars":81,"textLines":1,"bbox":[900,348,286,108]}
+{"kind":"textbox","id":"sh/dcbulwva","slide":3,"text":"Inference uses the same preprocessing as training, fitted on the training split only.","textPreview":"Inference uses the same preprocessing as training, fitted on the training split only.","textChars":85,"textLines":1,"bbox":[168,534,944,48]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":3,"text":"Research prototype. Not a clinical diagnosis.","textPreview":"Research prototype. Not a clinical diagnosis.","textChars":45,"textLines":1,"bbox":[72,664,620,24]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":3,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1160,664,48,24]}
+{"kind":"notes","id":"nt/0ve7o6","slide":3,"text":""}
+{"kind":"slide","id":"sl/4cwcbf","slide":4,"title":"API FOR THE FRONTEND","textShapes":12}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":4,"text":"API FOR THE FRONTEND","textPreview":"API FOR THE FRONTEND","textChars":20,"textLines":1,"bbox":[72,54,640,26]}
+{"kind":"textbox","id":"sh/gvy90je9","slide":4,"text":"Lovable talks to one women-facing prediction API","textPreview":"Lovable talks to one women-facing prediction API","textChars":48,"textLines":1,"bbox":[72,94,1020,96]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":4,"text":"The API returns an estimate, a likelihood band, careful explanation, and model-score contributions.","textPreview":"The API returns an estimate, a likelihood band, careful explanation, and model-score contributions.","textChars":99,"textLines":1,"bbox":[72,184,980,58]}
+{"kind":"shape","id":"sh/2hwfyxob","slide":4,"bbox":[72,286,340,190]}
+{"kind":"shape","id":"sh/r2p8nqxs","slide":4,"bbox":[72,286,7,190]}
+{"kind":"textbox","id":"sh/kjm1cfa9","slide":4,"text":"Questionnaire","textPreview":"Questionnaire","textChars":13,"textLines":1,"bbox":[94,306,296,36]}
+{"kind":"textbox","id":"sh/94fu18jq","slide":4,"text":"GET /api/v1/feature-schema\nGET /api/v1/sample-participant","textPreview":"GET /api/v1/feature-schema | GET /api/v1/sample-participant","textChars":57,"textLines":2,"bbox":[94,348,296,112]}
+{"kind":"shape","id":"sh/25kb6xkf","slide":4,"bbox":[470,286,340,190]}
+{"kind":"shape","id":"sh/rqd4vmtw","slide":4,"bbox":[470,286,7,190]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":4,"text":"Prediction","textPreview":"Prediction","textChars":10,"textLines":1,"bbox":[492,306,296,36]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":4,"text":"POST /api/v1/predict\nReturns probability and lower, moderate, or higher band.","textPreview":"POST /api/v1/predict | Returns probability and lower, moderate, or higher band.","textChars":77,"textLines":2,"bbox":[492,348,296,112]}
+{"kind":"shape","id":"sh/1orytsvu","slide":4,"bbox":[868,286,340,190]}
+{"kind":"shape","id":"sh/c7u54zid","slide":4,"bbox":[868,286,7,190]}
+{"kind":"textbox","id":"sh/judg7ads","slide":4,"text":"Transparency","textPreview":"Transparency","textChars":12,"textLines":1,"bbox":[890,306,296,36]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":4,"text":"GET /api/v1/model-info\nExplains dataset, model, performance, and limitations.","textPreview":"GET /api/v1/model-info | Explains dataset, model, performance, and limitations.","textChars":77,"textLines":2,"bbox":[890,348,296,112]}
+{"kind":"textbox","id":"sh/1032lszq","slide":4,"text":"Feature contributions describe what contributed to the model score, not what caused menopause.","textPreview":"Feature contributions describe what contributed to the model score, not what caused menopause.","textChars":94,"textLines":1,"bbox":[154,540,972,48]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":4,"text":"Research prototype. Not a clinical diagnosis.","textPreview":"Research prototype. Not a clinical diagnosis.","textChars":45,"textLines":1,"bbox":[72,664,620,24]}
+{"kind":"textbox","id":"sh/nyd0z610","slide":4,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1160,664,48,24]}
+{"kind":"notes","id":"nt/4cwcbf","slide":4,"text":""}
