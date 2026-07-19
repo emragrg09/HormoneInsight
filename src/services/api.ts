@@ -217,8 +217,16 @@ function adaptFeatureSchema(be: BackendFeatureSchema): FeatureSchema {
     const meta = byName.get(code);
     if (!meta) return null;
     const displayMeta = FEATURE_META[code];
-    const label = meta.label || displayMeta?.label || code;
-    const description = meta.description || displayMeta?.description;
+    // Prefer the frontend's friendly label; fall back to the backend label
+    // (often the raw NHANES code) only when we don't have a mapping.
+    const backendLabel = meta.label;
+    const isBackendLabelJustCode =
+      !backendLabel || backendLabel.trim().toUpperCase() === code.toUpperCase();
+    const label =
+      displayMeta?.label ??
+      (isBackendLabelJustCode ? code : backendLabel) ??
+      code;
+    const description = displayMeta?.description || meta.description;
 
     if (categoricalSet.has(code)) {
       const allowed = be.category_mappings[code] ?? [];
@@ -230,6 +238,7 @@ function adaptFeatureSchema(be: BackendFeatureSchema): FeatureSchema {
       return {
         name: code,
         label,
+        code,
         type,
         required: meta.required,
         description,
@@ -241,6 +250,7 @@ function adaptFeatureSchema(be: BackendFeatureSchema): FeatureSchema {
       return {
         name: code,
         label,
+        code,
         type: "number",
         required: meta.required,
         unit: displayMeta?.unit,
@@ -254,6 +264,7 @@ function adaptFeatureSchema(be: BackendFeatureSchema): FeatureSchema {
     return {
       name: code,
       label,
+      code,
       type: "text",
       required: meta.required,
       description,
