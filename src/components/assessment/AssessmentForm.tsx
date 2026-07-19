@@ -159,10 +159,21 @@ export function AssessmentForm({ schema }: AssessmentFormProps) {
         </div>
       </div>
 
+      <div className="soft-card border-primary/15 bg-primary/5 p-5 sm:p-6">
+        <h2 className="font-display text-lg font-semibold">A few questions about your health</h2>
+        <p className="mt-2 max-w-3xl text-sm leading-relaxed text-foreground/85">
+          This questionnaire takes about 3–5 minutes. Answer what you can — optional fields may be
+          left blank and the model will handle missing values on the backend. Please do not enter
+          zero for values you don't know.
+        </p>
+      </div>
+
       {!isReview ? (
         <FormSection
           title={currentSection.title}
           description={currentSection.description}
+          stepNumber={step + 1}
+          totalSteps={schema.sections.length}
         >
           {currentSection.fields.map((f) => (
             <HealthField
@@ -178,21 +189,20 @@ export function AssessmentForm({ schema }: AssessmentFormProps) {
           <div className="soft-card p-5">
             <h2 className="font-display text-xl font-semibold">Review your answers</h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Please confirm the entries below before generating the estimate.
-              You can go back to any step to make edits.
+              Please confirm the entries below before generating the estimate. You can go back to
+              any step to make edits.
             </p>
           </div>
-          <ReviewAnswers schema={schema} values={form.getValues()} />
+          <ReviewAnswers
+            schema={schema}
+            values={form.getValues()}
+            onEditSection={(idx) => setStep(idx)}
+          />
         </div>
       )}
 
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <Button
-          type="button"
-          variant="outline"
-          onClick={goPrev}
-          disabled={step === 0}
-        >
+        <Button type="button" variant="outline" onClick={goPrev} disabled={step === 0}>
           Previous
         </Button>
         {!isReview ? (
