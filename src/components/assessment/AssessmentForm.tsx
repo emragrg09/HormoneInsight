@@ -159,6 +159,18 @@ export function AssessmentForm({ schema }: AssessmentFormProps) {
         </div>
       </div>
 
+      <div className="soft-card border-primary/15 bg-primary/5 p-5 sm:p-6">
+        <h2 className="font-display text-lg font-semibold">
+          A few questions about your health
+        </h2>
+        <p className="mt-2 max-w-3xl text-sm leading-relaxed text-foreground/85">
+          This questionnaire takes about 3–5 minutes. Answer what you can —
+          optional fields may be left blank and the model will handle missing
+          values on the backend. Please do not enter zero for values you don't
+          know.
+        </p>
+      </div>
+
       {!isReview ? (
         <FormSection
           title={currentSection.title}
