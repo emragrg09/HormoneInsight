@@ -11,12 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import type { FeatureField } from "@/types/api";
 
 interface HealthFieldProps<T extends FieldValues> {
@@ -25,18 +20,12 @@ interface HealthFieldProps<T extends FieldValues> {
   error?: string;
 }
 
-export function HealthField<T extends FieldValues>({
-  field,
-  control,
-  error,
-}: HealthFieldProps<T>) {
+export function HealthField<T extends FieldValues>({ field, control, error }: HealthFieldProps<T>) {
   const id = `field-${field.name}`;
-  const describedBy = [
-    field.description ? `${id}-desc` : null,
-    error ? `${id}-err` : null,
-  ]
-    .filter(Boolean)
-    .join(" ") || undefined;
+  const describedBy =
+    [field.description ? `${id}-desc` : null, error ? `${id}-err` : null]
+      .filter(Boolean)
+      .join(" ") || undefined;
 
   return (
     <div className="flex flex-col gap-2.5 rounded-xl border border-border/80 bg-surface/40 p-4 transition-colors focus-within:border-primary/30 focus-within:bg-surface/60 sm:p-5">
@@ -45,11 +34,11 @@ export function HealthField<T extends FieldValues>({
           <Label htmlFor={id} className="text-sm font-medium leading-snug">
             {field.label}
             {field.required ? (
-              <span className="ml-1 text-destructive" aria-label="required">*</span>
-            ) : (
-              <span className="ml-1 text-xs font-normal text-muted-foreground">
-                (optional)
+              <span className="ml-1 text-destructive" aria-label="required">
+                *
               </span>
+            ) : (
+              <span className="ml-1 text-xs font-normal text-muted-foreground">(optional)</span>
             )}
           </Label>
           {field.description && (
@@ -77,9 +66,7 @@ export function HealthField<T extends FieldValues>({
               {field.code}
             </span>
           )}
-          {field.code && field.code !== field.label && field.unit && (
-            <span aria-hidden>·</span>
-          )}
+          {field.code && field.code !== field.label && field.unit && <span aria-hidden>·</span>}
           {field.unit && <span>{field.unit}</span>}
         </div>
       </div>
@@ -91,10 +78,7 @@ export function HealthField<T extends FieldValues>({
           const val = rhf.value;
           if (field.type === "select") {
             return (
-              <Select
-                value={val ? String(val) : ""}
-                onValueChange={(v) => rhf.onChange(v || null)}
-              >
+              <Select value={val ? String(val) : ""} onValueChange={(v) => rhf.onChange(v || null)}>
                 <SelectTrigger id={id} aria-describedby={describedBy}>
                   <SelectValue placeholder="Select an option…" />
                 </SelectTrigger>

@@ -31,9 +31,7 @@ export function FormSection({
             )}
           </div>
           {description && (
-            <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-              {description}
-            </p>
+            <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{description}</p>
           )}
         </div>
       </div>

@@ -20,12 +20,9 @@ export function StepProgress({ steps, current }: StepProgressProps) {
               aria-current={state === "active" ? "step" : undefined}
               className={cn(
                 "flex items-center gap-2 rounded-full border px-2.5 py-1.5 transition-colors",
-                state === "active" &&
-                  "border-primary/40 bg-primary/10 text-primary",
-                state === "done" &&
-                  "border-secondary bg-secondary text-secondary-foreground",
-                state === "upcoming" &&
-                  "border-border bg-background text-muted-foreground",
+                state === "active" && "border-primary/40 bg-primary/10 text-primary",
+                state === "done" && "border-secondary bg-secondary text-secondary-foreground",
+                state === "upcoming" && "border-border bg-background text-muted-foreground",
               )}
             >
               <span
@@ -43,9 +40,7 @@ export function StepProgress({ steps, current }: StepProgressProps) {
               </span>
               <span className="hidden sm:inline">{s.title}</span>
             </span>
-            {i < steps.length - 1 && (
-              <span className="h-px w-4 bg-border" aria-hidden />
-            )}
+            {i < steps.length - 1 && <span className="h-px w-4 bg-border" aria-hidden />}
           </li>
         );
       })}
