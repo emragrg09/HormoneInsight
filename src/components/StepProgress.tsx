@@ -10,7 +10,7 @@ export function StepProgress({ steps, current }: StepProgressProps) {
   return (
     <ol
       aria-label="Assessment progress"
-      className="flex flex-wrap items-center gap-2 text-sm"
+      className="flex flex-wrap items-center gap-2 text-xs sm:text-sm"
     >
       {steps.map((s, i) => {
         const state = i < current ? "done" : i === current ? "active" : "upcoming";
@@ -19,7 +19,7 @@ export function StepProgress({ steps, current }: StepProgressProps) {
             <span
               aria-current={state === "active" ? "step" : undefined}
               className={cn(
-                "flex items-center gap-2 rounded-full border px-3 py-1.5 transition-colors",
+                "flex items-center gap-2 rounded-full border px-2.5 py-1.5 transition-colors",
                 state === "active" &&
                   "border-primary/40 bg-primary/10 text-primary",
                 state === "done" &&
