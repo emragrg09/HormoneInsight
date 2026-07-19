@@ -40,7 +40,7 @@ export function HealthField<T extends FieldValues>({
 
   return (
     <div className="flex flex-col gap-1.5">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 flex-wrap">
         <Label htmlFor={id} className="text-sm">
           {field.label}
           {field.required ? (
@@ -51,6 +51,14 @@ export function HealthField<T extends FieldValues>({
             </span>
           )}
         </Label>
+        {field.code && field.code !== field.label && (
+          <span
+            className="text-[10px] font-mono uppercase tracking-wide text-muted-foreground/70"
+            aria-hidden
+          >
+            {field.code}
+          </span>
+        )}
         {field.unit && (
           <span className="text-xs text-muted-foreground">{field.unit}</span>
         )}
