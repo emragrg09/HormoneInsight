@@ -11,6 +11,7 @@ export interface FeatureFieldOption {
 export interface FeatureField {
   name: string;
   label: string;
+  code?: string;
   type: FieldType;
   required: boolean;
   unit?: string;
@@ -61,6 +62,7 @@ export interface PredictRequest {
 export interface Contribution {
   feature_name: string;
   label: string;
+  code?: string;
   original_value: string | number | null;
   contribution: number;
 }
