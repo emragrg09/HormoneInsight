@@ -29,13 +29,15 @@ export const SECTIONS: SectionMeta[] = [
   {
     id: "demographics",
     title: "About You",
-    description: "Basic demographic information used by the model.",
+    description:
+      "A few basics about you. This helps the model compare your answers to similar participants.",
     features: ["RIDAGEYR", "RIDRETH3", "DMDEDUC2", "DMDMARTZ", "INDFMPIR"],
   },
   {
     id: "reproductive",
-    title: "Menstrual and Reproductive Health",
-    description: "Questions from the NHANES reproductive health questionnaire.",
+    title: "Menstrual & Reproductive Health",
+    description:
+      "Questions about your reproductive health history. Leave any question blank if you are unsure — please do not guess or enter zero.",
     features: [
       "RIDEXPRG",
       "RHQ010",
@@ -51,6 +53,8 @@ export const SECTIONS: SectionMeta[] = [
   {
     id: "body",
     title: "Body Measurements",
+    description:
+      "These measurements help the model understand general physical health. Approximate values are fine.",
     features: [
       "BMXWT",
       "BMXHT",
@@ -64,9 +68,9 @@ export const SECTIONS: SectionMeta[] = [
   },
   {
     id: "hormones",
-    title: "Sex Steroid Hormone Panel",
+    title: "Sex Hormone Panel",
     description:
-      "Enter values from a recent lab report. Leave blank if unavailable — please do not enter zero.",
+      "Enter values from a recent lab report if you have one. Leave any field blank if unavailable — please do not enter zero.",
     features: [
       "LBXAND",
       "LBXAMH",
@@ -80,9 +84,9 @@ export const SECTIONS: SectionMeta[] = [
   },
   {
     id: "labs",
-    title: "Metabolic, Inflammation, and Lipid Panel",
+    title: "Metabolic, Inflammation & Lipid Panel",
     description:
-      "Optional laboratory values. Leave blank if unavailable — please do not enter zero.",
+      "Optional lab values that describe metabolism, inflammation, and cholesterol. Leave any field blank if unavailable — please do not enter zero.",
     features: [
       "LBXIN",
       "LBXGLU",
